@@ -1,0 +1,32 @@
+@mixin padding($top, $left: $top, $bottom: $top,  $right: $left) {
+  padding-top: $top;
+  padding-left: $left;
+  padding-bottom: $bottom;
+  padding-right: $right;
+}
+
+@mixin margin($top, $left: $top, $bottom: $top,  $right: $left) {
+  margin-top: $top;
+  margin-left: $left;
+  margin-bottom: $bottom;
+  margin-right: $right;
+}
+
+@mixin radius($tl, $tr: $tl, $bl: $tr,  $br: $tl) {
+  border-top-left-radius: $tl;
+  border-top-right-radius: $tr;
+  border-bottom-left-radius: $bl;
+  border-bottom-right-radius: $br;
+}
+
+@mixin button-styles() {
+  @extend btn;
+  // color: ;
+  // background-color: ;
+  // border-color: ;
+  // &:hover {
+  //   color: ;
+  //   backgorund-color: ;
+  //   border-color: ;
+  // }
+}

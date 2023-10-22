@@ -1,0 +1,69 @@
+* {
+  font: normal normal 400 $fs-regular $font-secondary;
+  line-height: $lh-lg;
+}
+
+// .btn {}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+
+  &.primary:hover {
+    color: $white;
+  }
+}
+
+header {
+  font-family: $font-primary;
+
+  & > * {
+    font-family: inherit;
+  }
+
+  h1 {
+    font-size: $fs-10xl;
+  }
+
+  h2 {
+    font-size: $fs-2xl;
+  }
+
+  h3 {
+    font-size: $fs-xl;
+  }
+
+  h4 {
+    font-size: $fs-lg;
+  }
+
+  h5 {
+    font-size: $fs-regular;
+  }
+
+  h6 {
+    font-size: $fs-sm;
+  }
+}

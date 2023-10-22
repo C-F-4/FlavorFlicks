@@ -1,0 +1,28 @@
+@import './../../style.scss';
+
+.container {
+  @include flexbox();
+  height: 15rem;
+  background: $codgrey url('./../../assets/images/texture-2.png') repeat left top;
+  color: $white;
+
+  & > * {
+    @include flex;
+
+    header {
+      @extend .text-center;
+    }
+  }
+
+  .reach {
+  }
+
+  .timings {
+  }
+
+  .feedback {
+    header {
+      @extend .text-left;
+    }
+  }
+}

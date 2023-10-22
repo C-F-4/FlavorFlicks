@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "pages": "Pages",
+    "delivery": "Delivery",
+    "news": "News",
+    "features": "Features",
+    "booking": "Reserve a Table"
+  },
+  "landing": {
+    "title": "Foody love: Unveil Culinary Excellence",
+    "subtitle": "Embark on a Gastronomic Odyssey, Where Every Plate is a Masterpiece, Every Flavor a Revelation, and Every Bite an Exquisite Experience in the Artistry of Fine Dining.",
+    "cta": "Click here"
+  },
+  "about": {
+    "title": "About us",
+    "subtitle": "We are tasty",
+    "know": "Know more"
+  },
+  "specials": {
+    "title": "Special Recipes",
+    "view": "View More"
+  },
+  "gallery": {
+    "title": "Delightful",
+    "subtitle": "Experience"
+  },
+  "menu": {
+    "title": "Amazing",
+    "subtitle": "Delicious",
+    "drinks": "Drinks",
+    "mains": "Main Course",
+    "dessert": "Desserts"
+  },
+  "apps": {
+    "announce": "Happy to announce",
+    "mobile": "Mobile App",
+    "available": "is available on every OS platform"
+  },
+  "footer": {
+    "addressTitle": "Take it easy with location",
+    "workHourTitle": "Working Hours",
+    "feedbackTitle": "Feedback form",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "formLabel": {
+      "name": "Name",
+      "mail": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Submit"
+    },
+    "copy": "Copyright"
+  }
+}
