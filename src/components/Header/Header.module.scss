@@ -1,7 +1,8 @@
-@import './../../style.scss';
+@import 'src/style.scss';
 
 .nav {
   position: fixed;
   background: $white;
   width: 100%;
+  z-index: 99;
 }

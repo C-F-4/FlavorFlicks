@@ -1,9 +1,21 @@
-@import './../../style.scss';
+@import 'src/style.scss';
 
 .container {
-  @include flexbox($justifyContent: center, $direction: column);
-  min-height: 100vh;
+  @include flexbox($justifyContent: center, $direction: column, $alignItems: center);
+  @include overlay(0.45, $black);
+  @extend .text-center;
+  min-height: 75vh;
   background: $white url('./../../assets/images/banner.png') no-repeat center center;
   background-size: cover;
   color: $white;
+
+  header {
+    max-width: 60%;
+  }
+
+  .subtitle {
+    text-transform: initial;
+    font-size: $fs-lg;
+    color: $white;
+  }
 }

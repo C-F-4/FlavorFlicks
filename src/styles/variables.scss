@@ -1,20 +1,25 @@
 $font-primary: Pacifico, cursive;
 $font-secondary: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
 
-$fs-10xl: 106px;
-$fs-2xl: 38px;
-$fs-xl: 30px;
-$fs-lg: 22px;
-$fs-regular: 15px;
-$fs-sm: 12px;
-$fs-xs: 8px;
+$fs-10xl: 12rem;
+$fs-6xl: 6rem;
+$fs-5xl: 5rem;
+$fs-4xl: 4rem;
+$fs-2xl: 3rem;
+$fs-xl: 2.25rem;
+$fs-lg: 1.5rem;
+$fs-regular: 0.9rem;
+$fs-sm: 0.85rem;
+$fs-xs: 0.75rem;
 
-$lh-3xl: 1.75;
+$lh-4xl: 1.75;
+$lh-3xl: 1.65;
 $lh-2xl: 1.5;
 $lh-xl: 1.25;
 $lh-lg: 1.15;
 $lh-regular: 1;
-$lh-sm: 0.75;
+$lh-sm: 0.85;
+$lh-xs: 0.75;
 
 $pd-lg: 1.25rem;
 $pd-regular: 1rem;
@@ -25,9 +30,11 @@ $codgrey: #1D1D1D;
 $tundora: #564343;
 $primary: #E7A331;
 
-$br-xl: 4px;
-$br-lg: 2px;
-$br-regular: 0;
+$br-xl: 10px;
+$br-lg: 7.5px;
+$br-regular: 5px;
+$br-sm: 2.5px;
+$br-none: 0;
 
 $border-primary: $primary;
 $nav-primary: $primary;

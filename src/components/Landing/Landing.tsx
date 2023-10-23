@@ -8,8 +8,9 @@ export const Landing: FC<{}> = () => {
   return (
     <section className={styles.container}>
       <header>
-        <h2 className={styles.title}>{t('landing.title')}</h2>
-        <h3 className={styles.subtitle}>{t('landing.subtitle')}</h3>
+        <h1 className={styles.title}>{t('landing.title')}</h1>
+        <p className={styles.subtitle}>{t('landing.subtitle')}</p>
+        <button className={`${styles.btn} ${styles.btnPrimary}`}>{t('landing.cta')}</button>
       </header>
     </section>
   );

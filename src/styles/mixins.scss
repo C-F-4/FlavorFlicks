@@ -1,15 +1,22 @@
 @mixin padding($top, $left: $top, $bottom: $top,  $right: $left) {
   padding-top: $top;
-  padding-left: $left;
-  padding-bottom: $bottom;
   padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
 }
 
 @mixin margin($top, $left: $top, $bottom: $top,  $right: $left) {
   margin-top: $top;
-  margin-left: $left;
-  margin-bottom: $bottom;
   margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+@mixin border($top: 1px solid $primary, $left: $top, $bottom: $top,  $right: $left) {
+  border-top: $top;
+  border-right: $right;
+  border-bottom: $bottom;
+  border-left: $left;
 }
 
 @mixin radius($tl, $tr: $tl, $bl: $tr,  $br: $tl) {
@@ -17,6 +24,23 @@
   border-top-right-radius: $tr;
   border-bottom-left-radius: $bl;
   border-bottom-right-radius: $br;
+}
+
+@mixin overlay($opacity: 0.25, $color: $white) {
+  position: relative;
+  z-index: 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background-color: rgba($color, $opacity);
+  }
+
+  & > * {
+    z-index: 9;
+  }
 }
 
 @mixin button-styles() {

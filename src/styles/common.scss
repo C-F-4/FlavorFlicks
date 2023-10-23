@@ -1,15 +1,49 @@
 * {
-  font-family: $font-secondary;
-  line-height: $lh-lg;
   box-sizing: border-box;
 }
 
 body {
+  font-family: $font-secondary;
   font-size: $fs-regular;
+  line-height: $lh-xl;
   font-weight: 400;
 }
 
-.btn {}
+.btn {
+  @include padding(7.5px, 12.5px);
+  @include border(2.5px solid $white);
+  @include radius($br-regular);
+  @extend .text-center;
+  display: inline-block;
+  font-size: $fs-lg;
+  text-decoration: none;
+  background-color: transparent;
+  color: $white;
+  font-family: $font-secondary;
+  text-transform: capitalize;
+  min-width: 165px;
+  transition: box-shadow 300ms ease-in-out, color 100ms ease-in-out, backgroundColor 200ms ease-in-out;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: 0;
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+  }
+
+  &.btnSecondary {
+    background-color: $primary;
+    border-color: $primary;
+    
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+}
 
 .container {
   padding: 90px 0;
@@ -59,7 +93,8 @@ header {
   }
 
   h1 {
-    font-size: $fs-10xl;
+    font-size: $fs-6xl;
+    margin: 50px 0;
   }
 
   h2 {
@@ -68,6 +103,7 @@ header {
 
   h3 {
     font-size: $fs-xl;
+    margin: 0.5rem 0;
   }
 
   h4 {
@@ -81,4 +117,10 @@ header {
   h6 {
     font-size: $fs-sm;
   }
+}
+
+p {
+  color: $codgrey;
+  font-size: $fs-lg;
+  line-height: $lh-lg;
 }
