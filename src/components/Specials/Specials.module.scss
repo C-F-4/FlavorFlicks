@@ -1,0 +1,9 @@
+@import './../../style.scss';
+
+.container {
+  @include flexbox($justifyContent: center);
+  min-height: 50rem; // remove
+  background: $white url('./../../assets/images/background-1.png') no-repeat center center;
+  background-size: cover;
+  color: $white;
+}

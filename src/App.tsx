@@ -3,7 +3,7 @@ import './App.scss';
 import { Home } from './scenes';
 import { SITE_DATA } from './utils/apps.constants';
 
-export const App: FC<{ name: string }> = () => {
+export const App: FC<{}> = () => {
   console.log(SITE_DATA);
 
   return (

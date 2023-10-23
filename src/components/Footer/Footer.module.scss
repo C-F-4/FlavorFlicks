@@ -1,0 +1,28 @@
+@import './../../style.scss';
+
+.footer {
+  @include flexbox();
+  min-height: 15rem; // remove
+  background: $codgrey url('./../../assets/images/texture-2.png') repeat left top;
+  color: $white;
+
+  & > * {
+    @include flex;
+
+    header {
+      @extend .text-center;
+    }
+  }
+
+  .reach {
+  }
+
+  .timings {
+  }
+
+  .feedback {
+    .title {
+      @extend .text-left;
+    }
+  }
+}

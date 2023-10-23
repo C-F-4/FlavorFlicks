@@ -1,8 +1,15 @@
 import { FC } from 'react';
-import './Specials.scss';
+import { useTranslation } from 'react-i18next';
+import styles from './Specials.module.scss';
 
 export const Specials: FC<{}> = () => {
+  const { t } = useTranslation();
+
   return (
-    <div>Specials</div>
+    <section className={styles.container}>
+      <header>
+        <h3 className={styles.title}>{t('specials.title')}</h3>
+      </header>
+    </section>
   );
 };

@@ -1,0 +1,9 @@
+@import './../../style.scss';
+
+.container {
+  @include flexbox($justifyContent: center, $direction: column);
+  min-height: 100vh;
+  background: $white url('./../../assets/images/banner.png') no-repeat center center;
+  background-size: cover;
+  color: $white;
+}

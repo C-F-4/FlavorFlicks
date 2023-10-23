@@ -1,8 +1,11 @@
 import { FC } from 'react';
-import './Header.scss';
+import { useTranslation } from 'react-i18next';
+import styles from './Header.module.scss';
 
 export const Header: FC<{}> = () => {
+  const { t } = useTranslation();
+
   return (
-    <div>Header</div>
+    <nav className={styles.nav}>{t('nav.home')}</nav>
   );
 };

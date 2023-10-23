@@ -1,9 +1,18 @@
 * {
-  font: normal normal 400 $fs-regular $font-secondary;
+  font-family: $font-secondary;
   line-height: $lh-lg;
 }
 
-// .btn {}
+body {
+  font-size: $fs-regular;
+  font-weight: 400;
+}
+
+.btn {}
+
+.container {
+  padding: 90px 0;
+}
 
 .center {
   display: flex;
@@ -41,6 +50,11 @@ header {
 
   & > * {
     font-family: inherit;
+  }
+
+  & > .subtitle {
+    font-family: $font-secondary;
+    text-transform: uppercase;
   }
 
   h1 {
