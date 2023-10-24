@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import styles from './Apps.module.scss';
-import AppImage from './../../assets/images/app-1.png';
+import AppImage from 'src/assets/images/app-1.png';
 import { useTranslation } from 'react-i18next';
 
 export const Apps: FC<{}> = () => {

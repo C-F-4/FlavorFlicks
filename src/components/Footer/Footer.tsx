@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import styles from './Footer.module.scss';
 import { useTranslation } from 'react-i18next';
+import { Socials } from 'src/components/Socials/Socials';
 
 export const Footer: FC<{}> = () => {
   const { t } = useTranslation();
@@ -11,6 +12,7 @@ export const Footer: FC<{}> = () => {
         <header>
           <h3 className={styles.title}>{t('footer.addressTitle')}</h3>
         </header>
+        <Socials />
       </div>
       <div className={styles.timings}>
         <header>

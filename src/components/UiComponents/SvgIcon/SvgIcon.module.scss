@@ -1,0 +1,38 @@
+@import 'src/style.scss';
+
+.icon {
+  font-size: $fsi-regular;
+  max-width: $fsi-regular;
+  height: $fsi-regular;
+  color: inherit;
+
+  &.size2XL {
+    font-size: $fsi-2xl;
+    max-width: $fsi-2xl;
+    height: $fsi-2xl;
+  }
+
+  &.sizeXL {
+    font-size: $fsi-xl;
+    max-width: $fsi-xl;
+    height: $fsi-xl;
+  }
+
+  &.sizeLG {
+    font-size: $fsi-lg;
+    max-width: $fsi-lg;
+    height: $fsi-lg;
+  }
+
+  &.sizeSM {
+    font-size: $fsi-sm;
+    max-width: $fsi-sm;
+    height: $fsi-sm;
+  }
+
+  &.sizeXS {
+    font-size: $fsi-xs;
+    max-width: $fsi-xs;
+    height: $fsi-xs;
+  }
+}

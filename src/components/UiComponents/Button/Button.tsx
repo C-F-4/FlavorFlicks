@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './Button.scss';
+// import style from './Button.module.scss';
 
 export const Button: FC<{}> = () => {
   return (

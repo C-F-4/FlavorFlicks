@@ -78,6 +78,14 @@ a {
   &.primary:hover {
     color: $white;
   }
+
+  &.secondary {
+    color: $white;
+
+    &:hover {
+      color: $primary;
+    }
+  }
 }
 
 header {

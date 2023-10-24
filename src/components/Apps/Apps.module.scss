@@ -2,6 +2,7 @@
 
 .container {
   @include flexbox($justifyContent: center);
+  @include overlay(0.45, $black);
   background: $white url('./../../assets/images/background-3.png') no-repeat center center;
   background-size: cover;
   color: $white;

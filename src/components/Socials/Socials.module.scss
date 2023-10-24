@@ -1,0 +1,10 @@
+@import 'src/style.scss';
+
+.icons {
+  @include margin(15px, 0);
+  @include flexbox($justifyContent: center);
+
+  .iconLink {
+    @include padding(0, 10px);
+  }
+}
