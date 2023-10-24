@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './Socials.module.scss';
 import { SITE_DATA } from 'src/constants/apps.constants';
 import { ReactComponent as SvgFacebook} from 'src/assets/images/icons/i-facebook.svg';
@@ -23,13 +23,11 @@ export const Socials: FC<{}> = () => {
 
   return (
     <div className={styles.icons}>
-      <BrowserRouter>
-        {socials.map(social => (
-          <Link to={social.url} key={social.type} className={`${styles.iconLink} ${styles.secondary}`}>
-            <SvgIcon svg={socialIconMap[social.type]} size='2XL' />
-          </Link>
-        ))}
-      </BrowserRouter>
+      {socials.map(social => (
+        <Link to={social.url} key={social.type} className={`${styles.iconLink} ${styles.secondary}`}>
+          <SvgIcon svg={socialIconMap[social.type]} size='2XL' />
+        </Link>
+      ))}
     </div>
   );
 };

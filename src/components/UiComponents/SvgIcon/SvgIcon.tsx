@@ -6,15 +6,16 @@ export interface SvgIconProps extends React.SVGProps<SVGSVGElement> {
     React.ComponentProps<'svg'> & { title?: string }
   >;
   size?: 'XS' | 'SM' | 'REG' | 'LG' | 'XL' | '2XL';
+  classList?: string;
 }
 
 export const SvgIcon: FC<SvgIconProps> = (props: SvgIconProps) => {
-  const { svg: SVG, size = 'REG' } = props;
+  const { svg: SVG, size = 'REG', classList = '' } = props;
   const sizeClass = 'size' + size;
 
   return (
     <SVG
-      className={`${styles.icon} ${styles[sizeClass]}`}
+      className={`${styles.icon} ${styles[sizeClass]} ${classList}`}
     />
   );
 };

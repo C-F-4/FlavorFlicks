@@ -1,9 +1,6 @@
 @import 'src/style.scss';
 
 .icon {
-  font-size: $fsi-regular;
-  max-width: $fsi-regular;
-  height: $fsi-regular;
   color: inherit;
 
   &.size2XL {
@@ -22,6 +19,12 @@
     font-size: $fsi-lg;
     max-width: $fsi-lg;
     height: $fsi-lg;
+  }
+
+  &.sizeREG {
+    font-size: $fsi-regular;
+    max-width: $fsi-regular;
+    height: $fsi-regular;
   }
 
   &.sizeSM {
