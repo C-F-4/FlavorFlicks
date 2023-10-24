@@ -26,7 +26,7 @@ export const NAV = {
     }
   ],
   cta: {
-    title: 'Reserve a Table',
+    text: 'Reserve a Table',
     url: '#'
   }
 };

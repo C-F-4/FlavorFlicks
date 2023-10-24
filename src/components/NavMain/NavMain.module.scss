@@ -1,0 +1,47 @@
+@import 'src/style.scss';
+
+.siteNav {
+  @include padding(20px, 20px);
+  @include flexbox($alignItems: center, $justifyContent: space-around);
+  background-color: rgba($black, 0.75);
+  width: 100%;
+
+  .navList {
+    @include flexbox($direction: row, $justifyContent: space-around);
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .listItem {
+      @include padding(10px);
+    }
+
+    .itemLink {
+      text-decoration: none;
+      color: $white;
+      font-size: $fs-regular;
+      text-transform: uppercase;
+      letter-spacing: $ls-lg;
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
+
+  .siteCta {
+    @include padding(7.5px, 15px);
+    background-color: rgba($black, 0.75);
+    font-size: $fs-regular;
+    min-width: auto;
+    letter-spacing: $ls-lg;
+    font-variant: small-caps;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

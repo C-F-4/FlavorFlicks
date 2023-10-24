@@ -9,7 +9,7 @@ import { ReactComponent as SvgSwiggy} from 'src/assets/images/icons/i-swiggy.svg
 import { ReactComponent as SvgZomato} from 'src/assets/images/icons/i-zomato.svg';
 import { SvgIcon } from 'src/components/UiComponents/SvgIcon/SvgIcon';
 
-export const Socials: FC<{}> = () => {
+export const Socials: FC<{ classlist: string }> = ({ classlist }) => {
   const { socials } = SITE_DATA;
   const socialIconMap: {[key: string]: React.FunctionComponent<
     React.ComponentProps<'svg'> & { title?: string }
@@ -22,7 +22,7 @@ export const Socials: FC<{}> = () => {
   };
 
   return (
-    <div className={styles.icons}>
+    <div className={`${styles.icons} ${classlist}`}>
       {socials.map(social => (
         <Link to={social.url} key={social.type} className={`${styles.iconLink} ${styles.secondary}`}>
           <SvgIcon svg={socialIconMap[social.type]} size='2XL' />

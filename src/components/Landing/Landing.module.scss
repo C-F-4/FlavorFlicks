@@ -13,9 +13,14 @@
     max-width: 60%;
   }
 
+  .title {
+    @include text-shadow(1);
+  }
+
   .subtitle {
     text-transform: initial;
     font-size: $fs-lg;
     color: $white;
+    max-width: 850px;
   }
 }
