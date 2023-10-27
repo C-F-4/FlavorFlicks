@@ -21,7 +21,7 @@ export const Menu: FC<{}> = () => {
         {MENU.primaries.map(primaryCategory => (
           <div className={"card"} key={primaryCategory.id}>
             <div className={"card-image"}>
-              <img src={primaryCategory.image} />
+              <img src={primaryCategory.image} loading="lazy" />
             </div>
             <div className={"card-body"}>
               <Slider {...SETTINGS.DEFAULT}>

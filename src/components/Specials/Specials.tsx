@@ -10,10 +10,9 @@ export const Specials: FC<{}> = () => {
 
   return (
     <section className={"special-container"}>
-      {RECIPES.filter(recipe => !!recipe.isSpecial).map(recipe => {
-        const dish = MENU.recipes.find(item => item.id === recipe.id);
-        return (
-          <div className={"card"} key={recipe.id}>
+      {RECIPES.filter(recipe => !!recipe.isSpecial).map(recipe => (
+        MENU.recipes.filter(item => item.id === recipe.id).map(dish => (
+          <div className={"card"} key={dish.id}>
             <div className={"card-image"}>
               <img src={dish?.image} />
             </div>
@@ -28,7 +27,8 @@ export const Specials: FC<{}> = () => {
               </div>
             </div>
           </div>
-      )})}
+        ))
+      ))}
     </section>
   );
 };

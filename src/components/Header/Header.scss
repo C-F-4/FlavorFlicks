@@ -7,6 +7,7 @@
 
   .logo {
     @include padding(20px);
+    @include radius(0, 0, 50%, 50%);
     background-color: $primary;
     width: 150px;
     box-sizing: content-box;
@@ -34,10 +35,11 @@
 
     .site-hours,
     .site-contact {
-      color: $tundora;
       @include flexbox($alignItems: center, $justifyContent: center);
+      color: $tundora;
       gap: 5px;
       font-weight: bold;
+      text-transform: uppercase;
 
       .icon {
         color: $primary;
