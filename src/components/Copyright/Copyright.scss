@@ -1,8 +1,0 @@
-@import 'src/style.scss';
-
-.copy-bar {
-  @include padding($pd-regular);
-  @extend .text-center;
-  background-color: $black;
-  color: $white;
-}
