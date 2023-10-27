@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './Specials.scss';
 import { RECIPES } from 'src/constants/recipes.constants';
 import { MENU } from 'src/constants/menu.constants';
+import { Button } from 'src/components/UiComponents/Button/Button';
 
 export const Specials: FC<{}> = () => {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ export const Specials: FC<{}> = () => {
               </header>
               <p className={"summary"}>{recipe.highlight}</p>
               <div className={"card-foot"}>
-                <button className={"btn btn-secondary"}>{t('specials.view')}</button>
+                <Button variant="secondary">{t('specials.view')}</Button>
               </div>
             </div>
           </div>

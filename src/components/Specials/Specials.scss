@@ -4,7 +4,6 @@
   @include flexbox($justifyContent: center);
   @include overlay(0.45, $black);
   @include padding(7.5rem, 0);
-  @include margin(2rem);
   box-sizing: border-box;
   background: $white url('./../../assets/images/background-1.png') no-repeat center center;
   background-size: cover;
@@ -13,6 +12,7 @@
   .card {
     @include flexbox($alignItems: center, $justifyContent: center);
     @include flex($fb: 0);
+    @include margin(2rem);
 
     .card-image,
     .card-body {
