@@ -1,10 +1,17 @@
 @import 'src/style.scss';
 
 .item-container {
-  width: 200px;
+  @include radius($br-regular);
+  @include margin(20px, auto);
+  width: 250px;
+  overflow: hidden;
 
   img {
     width: inherit;
     height: auto;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

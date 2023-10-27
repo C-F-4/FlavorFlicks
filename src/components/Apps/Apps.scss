@@ -11,6 +11,11 @@
 
   .column-image {
     @extend .text-right;
+    max-height: 600px;
+
+    img {
+      max-height: inherit;
+    }
   }
 
   .subtitle {
