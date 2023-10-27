@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import './Footer.scss';
 import { useTranslation } from 'react-i18next';
+import { Element } from 'react-scroll';
 import { Socials } from 'src/components/Socials/Socials';
 import { SITE_DATA } from 'src/constants/apps.constants';
 import { Input } from 'src/components/UiComponents/Input/Input';
@@ -44,6 +45,7 @@ export const Footer: FC<{}> = () => {
           ))}
         </div>
       </div>
+      <Element name="connect"></Element>
       <div className={"column feedback"}>
         <header className={"column-head"}>
           <h3 className={"title"}>{t('footer.feedbackTitle')}</h3>

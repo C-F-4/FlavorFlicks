@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Element } from 'react-scroll';
 import './Apps.scss';
 import { SvgIcon } from 'src/components/UiComponents/SvgIcon/SvgIcon';
 import AppImage from 'src/assets/images/app-1.png';
@@ -10,6 +11,7 @@ export const Apps: FC<{}> = () => {
 
   return (
     <section className={"apps-container"}>
+      <Element name="app"></Element>
       <div className={"column column-image"}>
         <img src={AppImage} alt={t('apps.mobile')} />
       </div>

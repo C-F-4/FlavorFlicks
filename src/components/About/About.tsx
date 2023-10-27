@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Element } from 'react-scroll';
 import './About.scss';
 import { ABOUT } from 'src/constants/about.constants';
 import { Button } from 'src/components/UiComponents/Button/Button';
@@ -9,6 +10,7 @@ export const About: FC<{}> = () => {
 
   return (
     <section className={"about-section"}>
+      <Element name="about"></Element>
       <div className={"container"}>
         <div className={"column img-wrapper"}>
           <div className={"about1"}></div>

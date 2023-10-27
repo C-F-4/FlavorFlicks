@@ -6,23 +6,23 @@ export const NAV = {
     },
     {
       title: 'Our Story',
-      url: '#about'
+      url: 'about'
     },
     {
       title: 'Highlights',
-      url: '#gallery'
+      url: 'gallery'
     },
     {
       title: 'Menus',
-      url: '#menu'
+      url: 'menu'
     },
     {
       title: 'App',
-      url: '#app'
+      url: 'app'
     },
     {
       title: 'Connect',
-      url: '#footer'
+      url: 'connect'
     }
   ],
   cta: {

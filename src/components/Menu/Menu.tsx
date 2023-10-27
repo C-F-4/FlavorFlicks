@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
+import { Element } from 'react-scroll';
 import './Menu.scss';
 import { MENU } from 'src/constants/menu.constants';
 import { SETTINGS } from 'src/constants/slider.constants';
@@ -11,6 +12,7 @@ export const Menu: FC<{}> = () => {
 
   return (
     <section className={"menu-container"}>
+      <Element name="menu"></Element>
       <header className={"menu-header"}>
         <h3 className={"title"}>{t('menu.title')}</h3>
         <h3 className={"subtitle"}>{t('menu.subtitle')}</h3>
