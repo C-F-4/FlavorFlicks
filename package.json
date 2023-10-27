@@ -2,6 +2,7 @@
   "name": "flavor-flicks",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://c-f-4.github.io/react-gh-pages",
   "dependencies": {
     "@types/jest": "^29.5.6",
     "@types/node": "^20.8.7",
@@ -21,6 +22,8 @@
     "typescript": "^3.2.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -30,6 +33,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react": "^18.2.31",
     "@types/react-slick": "^0.23.11",
+    "gh-pages": "^6.0.0",
     "react-scripts": "^5.0.1",
     "scss-loader": "^0.0.1",
     "typings-for-scss-modules-loader": "^1.5.1"
