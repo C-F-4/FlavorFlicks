@@ -33,11 +33,7 @@
   }
 
   .nav-cta {
-    @include padding(7.5px, 15px);
     background-color: rgba($black, 0.75);
     font-size: $fs-regular;
-    min-width: auto;
-    letter-spacing: $ls-lg;
-    font-variant: small-caps;
   }
 }

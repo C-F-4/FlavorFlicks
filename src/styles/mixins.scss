@@ -61,15 +61,3 @@
     moz-text-shadow: -1.5px 2.598076px 7px $black;
   }
 }
-
-@mixin button-styles() {
-  @extend btn;
-  // color: ;
-  // background-color: ;
-  // border-color: ;
-  // &:hover {
-  //   color: ;
-  //   backgorund-color: ;
-  //   border-color: ;
-  // }
-}

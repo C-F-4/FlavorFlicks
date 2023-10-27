@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Socials } from 'src/components/Socials/Socials';
 import { SITE_DATA } from 'src/constants/apps.constants';
 import { Input } from 'src/components/UiComponents/Input/Input';
+import { Button } from 'src/components/UiComponents/Button/Button';
 
 export const Footer: FC<{}> = () => {
   const { t } = useTranslation();
@@ -57,7 +58,7 @@ export const Footer: FC<{}> = () => {
           </div>
         </form>
         <div className={"column-foot"}>
-          <button className={"btn btn-secondary"}>{t('footer.formLabel.submit')}</button>
+          <Button variant="secondary">{t('footer.formLabel.submit')}</Button>
         </div>
       </div>
     </footer>

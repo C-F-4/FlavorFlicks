@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import './About.scss';
 import { ABOUT } from 'src/constants/about.constants';
+import { Button } from 'src/components/UiComponents/Button/Button';
 
 export const About: FC<{}> = () => {
   const { t } = useTranslation();
@@ -21,7 +22,7 @@ export const About: FC<{}> = () => {
           <div className={"summary"}>
             <p>{ABOUT.summary.line1}</p>
             <p>{ABOUT.summary.line2}</p>
-            <button className={"btn btn-secondary"}>{t('about.know')}</button>
+            <Button variant="secondary">{t('about.know')}</Button>
           </div>
         </div>
       </div>

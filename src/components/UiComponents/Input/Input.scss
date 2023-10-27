@@ -1,1 +1,11 @@
 @import 'src/style.scss';
+
+.uc-input {
+  @include padding(10px, 20px);
+  @include radius($br-regular);
+  color: $dustygray;
+  background-color: $mineshaft;
+  line-height: $lh-xl;
+  border: none;
+  outline: none;
+}

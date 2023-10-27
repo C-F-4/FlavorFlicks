@@ -2,6 +2,7 @@ import { FC } from 'react';
 import './NavMain.scss';
 import { NAV } from 'src/constants/nav.constants';
 import { Link } from 'react-router-dom';
+import { Button } from 'src/components/UiComponents/Button/Button';
 
 export const NavMain: FC<{}> = () => {
   return (
@@ -15,7 +16,7 @@ export const NavMain: FC<{}> = () => {
           </li>
         ))}
       </ul>
-      <button className={"btn primary nav-cta"}>{NAV.cta.text}</button>
+      <Button className={"nav-cta"} variant="primary">{NAV.cta.text}</Button>
     </nav>
   );
 };

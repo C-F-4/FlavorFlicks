@@ -11,42 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-.btn {
-  @include padding(7.5px, 12.5px);
-  @include border(2.5px solid $white);
-  @include radius($br-regular);
-  @extend .text-center;
-  display: inline-block;
-  font-size: $fs-xl;
-  text-decoration: none;
-  background-color: transparent;
-  color: $white;
-  font-family: $font-secondary;
-  text-transform: capitalize;
-  min-width: 165px;
-  transition: box-shadow 300ms ease-in-out, color 100ms ease-in-out, backgroundColor 200ms ease-in-out;
-  overflow: hidden;
-
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    outline: 0;
-    background-color: rgba($primary, 0.5);
-    border-color: $primary;
-    color: $white;
-  }
-
-  &.btn-secondary {
-    background-color: $primary;
-    border-color: $primary;
-    
-    &:hover {
-      background-color: rgba($white, 0.9);
-      color: $primary;
-    }
-  }
-}
-
 .container {
   padding: 90px 0;
 }
