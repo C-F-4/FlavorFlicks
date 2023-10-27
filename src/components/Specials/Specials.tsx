@@ -22,6 +22,9 @@ export const Specials: FC<{}> = () => {
                 <h3 className={"subtitle"}>{recipe.title}</h3>
               </header>
               <p className={"summary"}>{recipe.highlight}</p>
+              <div className={"card-foot"}>
+                <button className={"btn btn-secondary"}>{t('specials.view')}</button>
+              </div>
             </div>
           </div>
       )})}
