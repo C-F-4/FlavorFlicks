@@ -18,5 +18,23 @@ export const SETTINGS = {
     speed: 1000,
     swipeToSlide: false,
     lazyLoad: 'ondemand',
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesPerRow: 4,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesPerRow: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   }
 };
