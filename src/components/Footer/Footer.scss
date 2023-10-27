@@ -1,27 +1,46 @@
 @import 'src/style.scss';
 
 .footer-container {
-  @include flexbox();
+  @include flexbox($justifyContent: center);
   @include padding(2.5rem);
   background: $codgrey url('./../../assets/images/texture-2.png') repeat left top;
   color: $white;
 
   .column {
-    @include flex;
+    @include flexbox($direction: column);
+    @include flex(1);
 
     header {
       @extend .text-center;
     }
+
+    .column-head {
+      @include margin(0, 0, 1rem, 0);
+    }
   }
 
   .reach {
-    address p {
+    @extend .text-center;
+
+    .column-body {
+      @include flex(1);
+    }
+
+    .address {
       color: inherit;
     }
   }
 
   .timings {
     @extend .text-center;
+
+    .timing {
+      @include margin(0, 0, 2rem);
+    }
+
+    .meals {
+      @include margin(0, 0, 0.5rem);
+    }
   }
 
   .feedback {

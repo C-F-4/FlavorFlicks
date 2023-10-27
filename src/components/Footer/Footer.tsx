@@ -19,6 +19,9 @@ export const Footer: FC<{}> = () => {
           <p className={"address"}>{SITE_DATA.address.line1}</p>
           <p className={"address"}>{SITE_DATA.address.line2}</p>
           <p className={"address"}>{SITE_DATA.address.city}</p>
+
+          <p className={"address"}>{SITE_DATA.support.mail}</p>
+          <p className={"address"}>{SITE_DATA.support.phone}</p>
         </address>
         <div className={"column-foot"}>
           <Socials />
@@ -30,10 +33,12 @@ export const Footer: FC<{}> = () => {
         </header>
         <div className={"column-body"}>
           {SITE_DATA.timings.offline.map(timing => (
-            <div>
-              <div>{timing.day1} {t('footer.dayConnector')} {timing.day2}</div>
+            <div className={"timing"}>
+              <h3 className={"days"}>
+                {timing.day1} {t('footer.dayConnector')} {timing.day2}
+              </h3>
               {timing.range.map(timeInfo => (
-                <div>{timeInfo.time} ({timeInfo.type})</div>
+                <div className={"meals"}>{timeInfo.time} ({timeInfo.type})</div>
               ))}
             </div>
           ))}
@@ -58,7 +63,7 @@ export const Footer: FC<{}> = () => {
           </div>
         </form>
         <div className={"column-foot"}>
-          <Button variant="secondary">{t('footer.formLabel.submit')}</Button>
+          <Button variant="secondary" size="small">{t('footer.formLabel.submit')}</Button>
         </div>
       </div>
     </footer>

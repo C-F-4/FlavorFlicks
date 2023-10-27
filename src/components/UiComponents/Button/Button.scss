@@ -36,4 +36,9 @@
       color: $primary;
     }
   }
+
+  &.small {
+    font-size: $fs-sm;
+    min-width: 100px;
+  }
 }
