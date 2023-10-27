@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import './Menu.scss';
 import { MENU } from 'src/constants/menu.constants';
 import { SETTINGS } from 'src/constants/slider.constants';
+import { SITE_DATA } from 'src/constants/apps.constants';
 
 export const Menu: FC<{}> = () => {
   const { t } = useTranslation();
@@ -36,7 +37,7 @@ export const Menu: FC<{}> = () => {
                               {recipe.sticker && <div className={"recipe-icon"}><img src={recipe.sticker} /></div>}
                               <div className={"recipe-name"}>{recipe.name}</div>
                               <div className={"recipe-gap"}></div>
-                              <div className={"recipe-price"}>{recipe.price}</div>
+                              <div className={"recipe-price"}>{SITE_DATA.selectedCurrency.shortCode} {recipe.price}</div>
                             </li>
                           ))
                         }

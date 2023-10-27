@@ -9,16 +9,16 @@
 
   .menu-header {
     @extend .text-center;
-    @include padding(0, 0, 3rem, 0);
+    @include padding(0, 0, 6rem, 0);
   }
 
   .menu-body {
     @include padding(20px);
     @include flexbox($direction: column, $justifyContent: center);
-    gap: 40px;
+    gap: 12.5rem;
 
     .card {
-      @include flexbox($alignItems: center, $justifyContent: center);
+      @include flexbox($alignItems: stretch, $justifyContent: center);
       @include flex();
 
       &:nth-of-type(even) {
@@ -30,6 +30,7 @@
       .card-header {
         @extend header;
         @include flexbox($justifyContent: space-between, $alignItems: baseline);
+        @include margin(0, 0, 2rem, 0);
 
         .subtitle {
           font-size: $fs-lg;
@@ -41,6 +42,7 @@
         max-width: 50%;
         z-index: $zi-body-lower;
         overflow: hidden;
+        transform: scale(1.25);
 
         img {
           max-width: 100%;
@@ -49,6 +51,7 @@
 
       .card-body {
         @include padding(20px, 20px, calc(20px + 25px));
+        @include margin(0, 0, 0, 40px);
         background: $white url('./../../assets/images/texture-1.png') repeat top left;
         color: $black;
         max-width: 50%;
@@ -61,11 +64,22 @@
           gap: 1rem;
           list-style-type: none;
           list-style: none;
+          min-height: 60%;
         }
 
         .recipe-item {
-          @include flexbox($justifyContent: space-between, $alignItems: baseline);
+          @include flexbox($justifyContent: space-between, $alignItems: center);
+          @include flex(1);
           gap: 0.5rem;
+        }
+
+        .recipe-name {
+          font-size: $fs-lg;
+        }
+
+        .recipe-price {
+          font-size: $fs-lg;
+          font-weight: bold;
         }
 
         .recipe-gap {

@@ -220,6 +220,7 @@ export const MENU: Menu = {
       description: "Succulent chicken or paneer marinated in aromatic spices and slow-cooked in a traditional tandoor.",
       tags: ["mains", "global"],
       image: require("src/assets/images/recipes/mains-1.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MMCGI002",
@@ -228,6 +229,7 @@ export const MENU: Menu = {
       description: "Grilled lamb with a fusion of Mediterranean herbs and flavors, served with couscous.",
       tags: ["mains", "global"],
       image: require("src/assets/images/recipes/mains-2.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MMCGI003",
@@ -236,6 +238,7 @@ export const MENU: Menu = {
       description: "A tantalizing stir-fry of mixed seafood with Thai basil and chili.",
       tags: ["mains", "global"],
       image: require("src/assets/images/recipes/mains-3.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MMCGI004",
@@ -244,6 +247,7 @@ export const MENU: Menu = {
       description: "Braised veal shanks in a rich saffron-infused sauce, served with gremolata.",
       tags: ["mains", "global"],
       image: require("src/assets/images/recipes/mains-4.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MMCGI005",
@@ -252,6 +256,7 @@ export const MENU: Menu = {
       description: "Grilled salmon glazed with sweet teriyaki sauce, served with jasmine rice.",
       tags: ["mains", "global"],
       image: require("src/assets/images/recipes/mains-5.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MMCCC001",
@@ -260,6 +265,7 @@ export const MENU: Menu = {
       description: "A perfectly grilled filet mignon, served with truffle-infused mashed potatoes and buttered asparagus.",
       tags: ["mains", "classic"],
       image: require("src/assets/images/recipes/mains-6.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MMCCC002",
@@ -268,6 +274,7 @@ export const MENU: Menu = {
       description: "Grilled shrimp tail paired with a fresh lettuce salad served with square pieces of savory butter-poached chicken.",
       tags: ["mains", "classic"],
       image: require("src/assets/images/recipes/mains-7.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MMCCC003",
@@ -276,6 +283,7 @@ export const MENU: Menu = {
       description: "A traditional French dish of chicken slow-cooked in red wine with mushrooms and pearl onions.",
       tags: ["mains", "classic"],
       image: require("src/assets/images/recipes/mains-8.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MMCCC004",
@@ -284,6 +292,7 @@ export const MENU: Menu = {
       description: "Tender beef fillet encased in puff pastry with mushroom duxelles.",
       tags: ["mains", "classic"],
       image: require("src/assets/images/recipes/mains-9.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MMCCC005",
@@ -292,6 +301,7 @@ export const MENU: Menu = {
       description: "Layers of breaded eggplant, marinara, and mozzarella, baked to perfection.",
       tags: ["mains", "classic"],
       image: require("src/assets/images/recipes/mains-10.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDESA001",
@@ -300,6 +310,7 @@ export const MENU: Menu = {
       description: "A sinful indulgence of warm chocolate fondue with fresh fruit and marshmallows for dipping.",
       tags: ["desserts", "artistry"],
       image: require("src/assets/images/recipes/dessert-1.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDESA002",
@@ -308,6 +319,7 @@ export const MENU: Menu = {
       description: "A harmonious melody of raspberry sorbet, fresh berries, and a hint of mint.",
       tags: ["desserts", "artistry"],
       image: require("src/assets/images/recipes/dessert-2.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDESA003",
@@ -316,6 +328,7 @@ export const MENU: Menu = {
       description: "Classic Italian tiramisu with layers of coffee-soaked ladyfingers and mascarpone.",
       tags: ["desserts", "artistry"],
       image: require("src/assets/images/recipes/dessert-3.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDESA004",
@@ -324,6 +337,7 @@ export const MENU: Menu = {
       description: "A velvety vanilla custard with a caramelized sugar crust.",
       tags: ["desserts", "artistry"],
       image: require("src/assets/images/recipes/dessert-4.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDESA005",
@@ -332,6 +346,7 @@ export const MENU: Menu = {
       description: "Fresh mango mousse served with a mango coulis and whipped cream.",
       tags: ["desserts", "artistry"],
       image: require("src/assets/images/recipes/dessert-5.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDEDW001",
@@ -340,6 +355,7 @@ export const MENU: Menu = {
       description: "A curated selection of sweet dessert wines to elevate your sweet endings.",
       tags: ["desserts", "dessertwine"],
       image: require("src/assets/images/recipes/dessert-6.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDEDW002",
@@ -348,6 +364,7 @@ export const MENU: Menu = {
       description: "A luscious dessert wine with honeyed notes and apricot.",
       tags: ["desserts", "dessertwine"],
       image: require("src/assets/images/recipes/dessert-7.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDEDW003",
@@ -356,6 +373,7 @@ export const MENU: Menu = {
       description: "A variety of aged port wines with flavors of dried fruits and nuts.",
       tags: ["desserts", "dessertwine"],
       image: require("src/assets/images/recipes/dessert-8.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDEDW004",
@@ -364,6 +382,7 @@ export const MENU: Menu = {
       description: "A sparkling and sweet Italian wine with floral and peachy aromas.",
       tags: ["desserts", "dessertwine"],
       image: require("src/assets/images/recipes/dessert-9.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     },
     {
       id: "MDEDW005",
@@ -372,6 +391,7 @@ export const MENU: Menu = {
       description: "A French sweet wine with notes of honey, apricot, and citrus.",
       tags: ["desserts", "dessertwine"],
       image: require("src/assets/images/recipes/dessert-10.png"),
+      sticker: require("src/assets/images/recipes/sticker-16.png"),
     }
   ]  
 };
