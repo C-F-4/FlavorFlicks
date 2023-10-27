@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/FlavorFlicks/static/css/main.bcc199e8.css",
-    "main.js": "/FlavorFlicks/static/js/main.19a9cb04.js",
+    "main.css": "/FlavorFlicks/static/css/main.d21f6561.css",
+    "main.js": "/FlavorFlicks/static/js/main.01fee9d9.js",
     "static/media/background-2.png": "/FlavorFlicks/static/media/background-2.7bb431acbdcbaf64994c.png",
     "static/media/drink-8.png": "/FlavorFlicks/static/media/drink-8.f6c9e04e3b73c561dd9f.png",
     "static/media/drink-7.png": "/FlavorFlicks/static/media/drink-7.05c342f16952834ca9f4.png",
@@ -60,6 +60,7 @@
     "static/media/sticker-1.png": "/FlavorFlicks/static/media/sticker-1.3eaa2f1696c9a28f7569.png",
     "static/media/sticker-3.png": "/FlavorFlicks/static/media/sticker-3.6d2244dffffe73fa6a2a.png",
     "static/media/sticker-15.png": "/FlavorFlicks/static/media/sticker-15.b6a85172b6786c1d01e3.png",
+    "static/media/sticker-16.png": "/FlavorFlicks/static/media/sticker-16.c9c80cab92aacde842f8.png",
     "static/media/i-appstore.svg": "/FlavorFlicks/static/media/i-appstore.5c690481ea506e0d712ae27313f6c427.svg",
     "static/media/i-playstore.svg": "/FlavorFlicks/static/media/i-playstore.f6d64c828db5c32471e22df3d7c3c63f.svg",
     "static/media/slick.svg": "/FlavorFlicks/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -74,11 +75,11 @@
     "static/media/i-facebook.svg": "/FlavorFlicks/static/media/i-facebook.ff32c394f4506f1f94815224513bdbad.svg",
     "static/media/i-twitter.svg": "/FlavorFlicks/static/media/i-twitter.0bb502b0542aa215def99c34157e29f5.svg",
     "index.html": "/FlavorFlicks/index.html",
-    "main.bcc199e8.css.map": "/FlavorFlicks/static/css/main.bcc199e8.css.map",
-    "main.19a9cb04.js.map": "/FlavorFlicks/static/js/main.19a9cb04.js.map"
+    "main.d21f6561.css.map": "/FlavorFlicks/static/css/main.d21f6561.css.map",
+    "main.01fee9d9.js.map": "/FlavorFlicks/static/js/main.01fee9d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcc199e8.css",
-    "static/js/main.19a9cb04.js"
+    "static/css/main.d21f6561.css",
+    "static/js/main.01fee9d9.js"
   ]
 }
