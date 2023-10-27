@@ -22,6 +22,7 @@ export const Header: FC<{}> = () => {
           <SvgIcon svg={ASSETS.phoneIcon} classList="icon" />
           <span>{SITE_DATA.support.phone}</span>
         </div>
+        <div className={"site-gap"}></div>
         <Socials classlist="icons" />
       </div>
       <div className={"row nav-bar-wrapper"}>

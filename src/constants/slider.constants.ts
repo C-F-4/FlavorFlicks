@@ -12,15 +12,31 @@ export const SETTINGS = {
   GALLERY: {
     ...base,
     slidesPerRow: 2,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     easing: 'ease-out',
     speed: 1000,
     swipeToSlide: false,
     // lazyLoad: 'ondemand',
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 1280,
+        settings: {
+          slidesPerRow: 2,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesPerRow: 2,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 800,
         settings: {
           slidesPerRow: 4,
           slidesToShow: 2,

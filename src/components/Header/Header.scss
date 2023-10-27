@@ -18,10 +18,19 @@
     }
   }
 
+  .row {
+    @include padding(0, 15rem, 0, 10rem);
+  }
+
+  .nav-bar-wrapper {
+    background-color: rgba($black, 0.75);
+  }
+
   .address {
-    @include flexbox($justifyContent: space-around, $alignItems: baseline);
+    @include flexbox($alignItems: baseline);
     background-color: $white;
     width: 100%;
+    gap: 3rem;
 
     .site-hours,
     .site-contact {
@@ -33,6 +42,10 @@
       .icon {
         color: $primary;
       }
+    }
+
+    .site-gap {
+      @include flex-grow();
     }
 
     .icons {

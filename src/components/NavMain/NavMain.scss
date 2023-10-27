@@ -1,9 +1,9 @@
 @import 'src/style.scss';
 
 .nav-bar {
-  @include padding(20px, 20px);
-  @include flexbox($alignItems: center, $justifyContent: space-around);
-  background-color: rgba($black, 0.75);
+  @include padding(20px, 0);
+  @include flexbox($alignItems: center, $justifyContent: space-between);
+  gap: 1rem;
   width: 100%;
 
   .nav-list {
