@@ -15,4 +15,13 @@
   .gallery-items {
     @include padding(0, 0, 25px, 0);
   }
+
+  .recipe-wrapper {
+    @extend .text-center;
+    color: $white;
+
+    .recipe-price {
+      color: inherit;
+    }
+  }
 }

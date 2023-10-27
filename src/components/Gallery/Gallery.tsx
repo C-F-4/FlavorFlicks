@@ -4,7 +4,9 @@ import Slider from 'react-slick';
 import './Gallery.scss';
 import { MENU } from 'src/constants/menu.constants';
 import { SETTINGS } from 'src/constants/slider.constants';
+import { SITE_DATA } from 'src/constants/apps.constants';
 import { GalleryItem } from 'src/components/GalleryItem/GalleryItem';
+import { Button } from 'src/components/UiComponents/Button/Button';
 
 export const Gallery: FC<{}> = () => {
   const { t } = useTranslation();
@@ -18,7 +20,13 @@ export const Gallery: FC<{}> = () => {
       <div className={"gallery-items"}>
         <Slider {...SETTINGS.GALLERY}>
           {MENU.recipes.map(recipe => (
-            <GalleryItem key={recipe.id} src={recipe.image} />
+            <GalleryItem key={recipe.id} src={recipe.image}>
+              <div className={"recipe-wrapper"}>
+                <h3 className={"recipe-name"}>{recipe.name}</h3>
+                <p className={"recipe-price"}>{SITE_DATA.selectedCurrency.shortCode} {recipe.price}</p>
+                <Button variant="secondary" size="small">{t('specials.view')}</Button>
+              </div>
+            </GalleryItem>
           ))}
         </Slider>
       </div>

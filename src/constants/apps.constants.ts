@@ -79,5 +79,9 @@ export const SITE_DATA = {
       type: 'appstore',
       url: ''
     }
-  ]
+  ],
+  selectedCurrency: {
+    shortCode: 'INR',
+    longCode: 'Indian Rupee',
+  },
 };

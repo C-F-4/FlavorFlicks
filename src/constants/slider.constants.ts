@@ -17,7 +17,7 @@ export const SETTINGS = {
     easing: 'ease-out',
     speed: 1000,
     swipeToSlide: false,
-    lazyLoad: 'ondemand',
+    // lazyLoad: 'ondemand',
     responsive: [
       {
         breakpoint: 600,
