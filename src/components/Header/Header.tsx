@@ -9,6 +9,7 @@ import { ASSETS } from 'src/constants/assets.constants';
 export const Header: FC<{}> = () => {
   return (
     <div className={"header-bar"}>
+      <div className={"logo"}><img src={SITE_DATA.logoHighRes} className={"logo-img"} /></div>
       <div className={"row address"}>
         <div className="site-hours">
           <SvgIcon svg={ASSETS.clockIcon} classList="icon" />

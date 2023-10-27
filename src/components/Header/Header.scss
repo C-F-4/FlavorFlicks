@@ -5,6 +5,19 @@
   width: 100%;
   z-index: $zi-nav;
 
+  .logo {
+    @include padding(20px);
+    background-color: $primary;
+    width: 150px;
+    box-sizing: content-box;
+    position: absolute;
+
+    .logo-img {
+      width: inherit;
+      height: auto;
+    }
+  }
+
   .address {
     @include flexbox($justifyContent: space-around, $alignItems: baseline);
     background-color: $white;
@@ -15,6 +28,7 @@
       color: $tundora;
       @include flexbox($alignItems: center, $justifyContent: center);
       gap: 5px;
+      font-weight: bold;
 
       .icon {
         color: $primary;

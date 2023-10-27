@@ -4,7 +4,7 @@
   @include flexbox($justifyContent: center, $direction: column, $alignItems: center);
   @include overlay(0.45, $black);
   @extend .text-center;
-  min-height: 75vh;
+  min-height: 80vh;
   background: $white url('./../../assets/images/banner.png') no-repeat center center;
   background-size: cover;
   color: $white;
