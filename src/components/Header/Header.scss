@@ -1,0 +1,42 @@
+@import 'src/style.scss';
+
+.header-bar {
+  position: fixed;
+  width: 100%;
+  z-index: $zi-nav;
+
+  .address {
+    @include flexbox($justifyContent: space-around, $alignItems: baseline);
+    background-color: $white;
+    width: 100%;
+
+    .site-hours,
+    .site-contact {
+      color: $tundora;
+      @include flexbox($alignItems: center, $justifyContent: center);
+      gap: 5px;
+
+      .icon {
+        color: $primary;
+      }
+    }
+
+    .icons {
+      .icon-link {
+        @include padding(5px);
+        color: $primary;
+
+        &:hover,
+        &:focus {
+          color: $black;
+        }
+
+        .icon {
+          font-size: $fsi-regular;
+          max-width: $fsi-regular;
+          height: $fsi-regular;
+        }
+      }
+    }
+  }
+}

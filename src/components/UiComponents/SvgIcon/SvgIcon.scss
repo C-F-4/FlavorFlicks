@@ -3,37 +3,37 @@
 .icon {
   color: inherit;
 
-  &.size2XL {
+  &.size-2xl {
     font-size: $fsi-2xl;
     max-width: $fsi-2xl;
     height: $fsi-2xl;
   }
 
-  &.sizeXL {
+  &.size-xl {
     font-size: $fsi-xl;
     max-width: $fsi-xl;
     height: $fsi-xl;
   }
 
-  &.sizeLG {
+  &.size-lg {
     font-size: $fsi-lg;
     max-width: $fsi-lg;
     height: $fsi-lg;
   }
 
-  &.sizeREG {
+  &.size-reg {
     font-size: $fsi-regular;
     max-width: $fsi-regular;
     height: $fsi-regular;
   }
 
-  &.sizeSM {
+  &.size-sm {
     font-size: $fsi-sm;
     max-width: $fsi-sm;
     height: $fsi-sm;
   }
 
-  &.sizeXS {
+  &.size-xs {
     font-size: $fsi-xs;
     max-width: $fsi-xs;
     height: $fsi-xs;

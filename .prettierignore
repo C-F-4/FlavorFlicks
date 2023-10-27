@@ -1,0 +1,10 @@
+.husky
+.vscode
+.git
+.github
+coverage
+dist
+node_modules
+**/public/third-party
+package.json
+stats.*

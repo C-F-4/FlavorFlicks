@@ -6,14 +6,18 @@
     "@types/jest": "^29.5.6",
     "@types/node": "^20.8.7",
     "@types/react-dom": "^18.2.14",
+    "bootstrap": "^5.3.2",
     "i18next": "^23.6.0",
     "node-sass": "^9.0.0",
     "normalize.css": "^8.0.1",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.9.1",
     "react-dom": "^18.1.0",
     "react-i18next": "^13.3.1",
     "react-router-dom": "^6.17.0",
+    "react-slick": "^0.29.0",
     "sass": "^1.69.4",
+    "slick-carousel": "^1.8.1",
     "typescript": "^3.2.1"
   },
   "scripts": {
@@ -25,6 +29,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react": "^18.2.31",
+    "@types/react-slick": "^0.23.11",
     "react-scripts": "^5.0.1",
     "scss-loader": "^0.0.1",
     "typings-for-scss-modules-loader": "^1.5.1"

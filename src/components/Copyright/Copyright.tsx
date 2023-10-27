@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './Copyright.module.scss';
+import './Copyright.scss';
 import { SITE_DATA } from 'src/constants/apps.constants';
 
 export const Copyright: FC<{}> = () => {
@@ -9,9 +9,9 @@ export const Copyright: FC<{}> = () => {
     url = SITE_DATA.url;
 
   return (
-    <div className={styles.copybar}>
+    <div className={"copy-bar"}>
       <span>{t("footer.copy")} &copy; {year} </span>
-      <a className={styles.primary} href={url}>{url}</a>
+      <a className={"primary"} href={url}>{url}</a>
     </div>
   );
 };

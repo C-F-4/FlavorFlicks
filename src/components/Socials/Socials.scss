@@ -3,7 +3,7 @@
 .icons {
   @include flexbox($justifyContent: center);
 
-  .iconLink {
+  .icon-link {
     @include padding(0, 10px);
   }
 }

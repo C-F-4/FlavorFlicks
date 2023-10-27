@@ -1,9 +1,18 @@
 @import 'src/style.scss';
 
-.container {
+.gallery-container {
   @include flexbox($justifyContent: center, $direction: column);
-  min-height: 50rem; // remove
+  @include padding(3.5rem, 2rem, 7.5rem);
   background: $white url('./../../assets/images/texture-1.png') repeat-y top center;
   background-size: cover;
   color: $black;
+
+  .gallery-header {
+    @extend .text-center;
+    @include padding(0, 0, 3rem, 0);
+  }
+
+  .gallery-items {
+    @include padding(0, 0, 25px, 0);
+  }
 }

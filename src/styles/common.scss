@@ -8,6 +8,7 @@ body {
   line-height: $lh-xl;
   font-weight: 400;
   letter-spacing: $ls-regular;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -16,7 +17,7 @@ body {
   @include radius($br-regular);
   @extend .text-center;
   display: inline-block;
-  font-size: $fs-lg;
+  font-size: $fs-xl;
   text-decoration: none;
   background-color: transparent;
   color: $white;
@@ -30,17 +31,17 @@ body {
   &:focus {
     cursor: pointer;
     outline: 0;
-    background-color: $primary;
+    background-color: rgba($primary, 0.5);
     border-color: $primary;
     color: $white;
   }
 
-  &.btnSecondary {
+  &.btn-secondary {
     background-color: $primary;
     border-color: $primary;
     
     &:hover {
-      background-color: $white;
+      background-color: rgba($white, 0.9);
       color: $primary;
     }
   }
@@ -107,16 +108,17 @@ header {
   }
 
   h2 {
-    font-size: $fs-2xl;
+    font-size: $fs-3xl;
   }
 
   h3 {
-    font-size: $fs-xl;
+    font-size: $fs-2xl;
+    font-weight: 500;
     margin: 0.5rem 0;
   }
 
   h4 {
-    font-size: $fs-lg;
+    font-size: $fs-xl;
   }
 
   h5 {

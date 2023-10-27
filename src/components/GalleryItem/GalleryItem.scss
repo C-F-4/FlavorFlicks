@@ -1,1 +1,10 @@
 @import 'src/style.scss';
+
+.item-container {
+  width: 200px;
+
+  img {
+    width: inherit;
+    height: auto;
+  }
+}

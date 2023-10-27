@@ -36,11 +36,20 @@
     left: 0; right: 0;
     top: 0; bottom: 0;
     background-color: rgba($color, $opacity);
+    z-index: -1;
   }
 
   & > * {
     z-index: 9;
   }
+}
+
+@mixin bg-polka {
+  background-image: 
+    radial-gradient($black 25.6%, transparent 25.6%);
+  background-position: 4px 4px;
+  background-size: 8px 8px;
+  background-color: transparent;
 }
 
 @mixin text-shadow($type: 1) {

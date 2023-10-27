@@ -1,0 +1,86 @@
+@import 'src/style.scss';
+
+.menu-container {
+  @include padding(3.5rem, 2rem, 7.5rem);
+  @include overlay(0.45, $black);
+  background: $white url('./../../assets/images/background-2.png') repeat-y top center;
+  background-size: cover;
+  color: $white;
+
+  .menu-header {
+    @extend .text-center;
+    @include padding(0, 0, 3rem, 0);
+  }
+
+  .menu-body {
+    @include padding(20px);
+    @include flexbox($direction: column, $justifyContent: center);
+
+    .card {
+      @include flexbox($alignItems: center, $justifyContent: space-around);
+      @include flex();
+
+      &:nth-of-type(even) {
+        .card-body {
+          order: -1;
+        }
+      }
+
+      .card-header {
+        @extend header;
+        @include flexbox($justifyContent: space-between, $alignItems: baseline);
+
+        .subtitle {
+          font-size: $fs-lg;
+        }
+      }
+
+      .card-image {
+        max-width: 50%;
+        z-index: $zi-body-lower;
+
+        img {
+          width: inherit;
+        }
+      }
+
+      .card-body {
+        @include padding(20px, 20px, calc(20px + 25px));
+        @include radius($br-regular);
+        background: $white url('./../../assets/images/texture-1.png') repeat top left;
+        color: $black;
+        max-width: 50%;
+
+        .recipe-list {
+          @include margin(10px, 0);
+          @include padding(0);
+          @include flexbox($direction: column);
+          gap: 1rem;
+          list-style-type: none;
+          list-style: none;
+        }
+
+        .recipe-item {
+          @include flexbox($justifyContent: space-between, $alignItems: baseline);
+        }
+
+        .recipe-gap {
+          @include flex-grow();
+          @include bg-polka();
+          height: 3px;
+          background-size: 5px;
+        }
+
+        .recipe-icon {
+          width: 24px;
+          // max-height: 24px;
+
+          img {
+            width: inherit;
+            height: inherit;
+          }
+        }
+      }
+    }
+  }
+}

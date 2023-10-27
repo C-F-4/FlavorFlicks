@@ -1,0 +1,11 @@
+.husky
+.vscode
+.git
+coverage
+public
+dist
+node_modules
+package.json
+*.md
+scripts
+stats.*

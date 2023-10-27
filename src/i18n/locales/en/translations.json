@@ -51,6 +51,7 @@
       "message": "Message",
       "submit": "Submit"
     },
-    "copy": "Copyright"
+    "copy": "Copyright",
+    "dayConnector": "To"
   }
 }

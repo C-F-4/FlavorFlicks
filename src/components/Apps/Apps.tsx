@@ -1,28 +1,27 @@
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import styles from './Apps.module.scss';
+import './Apps.scss';
 import { SvgIcon } from 'src/components/UiComponents/SvgIcon/SvgIcon';
 import AppImage from 'src/assets/images/app-1.png';
-import { ReactComponent as SvgGooglePlay} from 'src/assets/images/icons/i-playstore.svg';
-import { ReactComponent as SvgApplePlay} from 'src/assets/images/icons/i-appstore.svg';
+import { ASSETS } from 'src/constants/assets.constants';
 
 export const Apps: FC<{}> = () => {
   const { t } = useTranslation();
 
   return (
-    <section className={styles.container}>
-      <div>
+    <section className={"apps-container"}>
+      <div className={"column"}>
         <img src={AppImage} alt={t('apps.mobile')} />
       </div>
-      <div>
+      <div className={"column"}>
         <header>
-          <h3 className={styles.title}>{t('apps.announce')}</h3>
-          <h1 className={styles.subtitle}>{t('apps.mobile')}</h1>
+          <h3 className={"title"}>{t('apps.announce')}</h3>
+          <h1 className={"subtitle"}>{t('apps.mobile')}</h1>
         </header>
-        <div className={styles.appLinks}>
+        <div className={"app-links"}>
           <h3>{t('apps.available')}</h3>
-          <SvgIcon svg={SvgGooglePlay} classList={styles.appLink} />
-          <SvgIcon svg={SvgApplePlay} classList={styles.appLink} />
+          <SvgIcon svg={ASSETS.gplayIcon} classList={"app-link"} />
+          <SvgIcon svg={ASSETS.aplayIcon} classList={"app-link"} />
         </div>
       </div>
     </section>

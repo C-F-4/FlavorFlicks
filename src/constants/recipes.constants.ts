@@ -10,7 +10,6 @@ export const RECIPES = [
       It's a dish that embodies luxury and indulgence, making it a perfect choice for a special dining experience. We invite you to savor this regal delicacy, \
       prepared with love and a touch of heritage. Come, dine with us, and experience the essence of India.",
     isSpecial: true,
-    img: 'image-recipe-1.png',
     recipe: {
       ingredients: [
         {

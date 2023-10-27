@@ -1,6 +1,11 @@
+import Logo from 'src/assets/images/logo.png';
+import LogoHighRes from 'src/assets/images/logo-2x.png';
+
 export const SITE_DATA = {
   url: 'www.flavorflicks.com',
   title: 'Flavor Flicks',
+  logo: Logo,
+  logoHighRes: LogoHighRes,
   support: {
     mail: 'support@flavorflicks.com',
     phone: '061 9876 5432'
@@ -38,7 +43,7 @@ export const SITE_DATA = {
       {
         day1: 'Monday',
         day2: 'Friday',
-        times: [
+        range: [
           {
             type: 'Breakfast',
             time: '8.00AM to 10.00AM'
@@ -52,7 +57,7 @@ export const SITE_DATA = {
       {
         day1: 'Saturday',
         day2: 'Sunday',
-        times: [
+        range: [
           {
             type: 'Breakfast',
             time: '10.00AM to 11.00AM'

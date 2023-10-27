@@ -1,4 +1,7 @@
 @import "~normalize.css/normalize.css"; /* bring in normalize.css styles */
+// @import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
 
 @import './styles/fonts.scss';
 @import './styles/variables.scss';

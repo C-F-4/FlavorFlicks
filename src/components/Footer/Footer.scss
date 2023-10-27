@@ -1,12 +1,11 @@
 @import 'src/style.scss';
 
-.footer {
+.footer-container {
   @include flexbox();
-  min-height: 15rem; // remove
   background: $codgrey url('./../../assets/images/texture-2.png') repeat left top;
   color: $white;
 
-  & > * {
+  .column {
     @include flex;
 
     header {
@@ -15,6 +14,9 @@
   }
 
   .reach {
+    address p {
+      color: inherit;
+    }
   }
 
   .timings {

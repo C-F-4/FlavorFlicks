@@ -1,6 +1,34 @@
-export const MENU = {
-  primaries: {
-    drinks: {
+export type Category = {
+  title: string;
+  tag: string;
+};
+
+export type PrimaryCategory = {
+  id: string;
+  title: string;
+  categories: Category[];
+  image: any;
+};
+
+export type Recipe = {
+  id: string;
+  name: string;
+  price: string;
+  description: string;
+  tags: string[];
+  image?: any;
+  sticker?: any;
+};
+
+export type Menu = {
+  primaries: PrimaryCategory[];
+  recipes: Recipe[];
+};
+
+export const MENU: Menu = {
+  primaries: [
+    {
+      id: "drinks",
       title: "Drinks",
       categories: [
         {
@@ -16,8 +44,10 @@ export const MENU = {
           tag: "finewine"
         }
       ],
+      image: require("src/assets/images/image-menu-drinks.png"),
     },
-    mains: {
+    {
+      id: "mains",
       title: "Main Course",
       categories: [
         {
@@ -28,9 +58,11 @@ export const MENU = {
           title: "Classic Creations",
           tag: "classic"
         }
-      ]
+      ],
+      image: require("src/assets/images/image-menu-mains.png"),
     },
-    desserts: {
+    {
+      id: "desserts",
       title: "Desserts",
       categories: [
         {
@@ -41,9 +73,10 @@ export const MENU = {
           title: "Dessert Wines",
           tag: "dessertwine"
         }
-      ]
+      ],
+      image: require("src/assets/images/image-menu-desserts.png"),
     }
-  },
+  ],
   recipes: [
     {
       id: "MDRAE001",
@@ -51,8 +84,8 @@ export const MENU = {
       price: "1500",
       description: "A refreshing blend of lemon, lime, and orange, kissed with a hint of mint.",
       tags: ["drinks", "elixir"],
-      image: "drink-1.png",
-      sticker: "sticker-1.png"
+      image: require("src/assets/images/recipes/drink-1.png"),
+      sticker: require("src/assets/images/recipes/sticker-1.png")
     },
     {
       id: "MDRAE002",
@@ -60,8 +93,8 @@ export const MENU = {
       price: "1600",
       description: "A soothing mix of hibiscus, rose, and lavender, kissed with a touch of honey.",
       tags: ["drinks", "elixir"],
-      image: "drink-2.png",
-      sticker: "sticker-2.png"
+      image: require("src/assets/images/recipes/drink-2.png"),
+      sticker: require("src/assets/images/recipes/sticker-2.png")
     },
     {
       id: "MDRAE003",
@@ -69,8 +102,8 @@ export const MENU = {
       price: "1300",
       description: "A vibrant concoction of mixed berries and sparkling water.",
       tags: ["drinks", "elixir"],
-      image: "drink-3.png",
-      sticker: "sticker-3.png"
+      image: require("src/assets/images/recipes/drink-3.png"),
+      sticker: require("src/assets/images/recipes/sticker-3.png")
     },
     {
       id: "MDRAE004",
@@ -78,8 +111,8 @@ export const MENU = {
       price: "1400",
       description: "A garden-fresh medley of cucumber, basil, and elderflower.",
       tags: ["drinks", "elixir"],
-      image: "drink-4.png",
-      sticker: "sticker-4.png"
+      image: require("src/assets/images/recipes/drink-4.png"),
+      sticker: require("src/assets/images/recipes/sticker-4.png")
     },
     {
       id: "MDRAE005",
@@ -87,8 +120,8 @@ export const MENU = {
       price: "1200",
       description: "A zesty combination of grapefruit, lemon, and sparkling soda.",
       tags: ["drinks", "elixir"],
-      image: "drink-5.png",
-      sticker: "sticker-5.png"
+      image: require("src/assets/images/recipes/drink-5.png"),
+      sticker: require("src/assets/images/recipes/sticker-5.png")
     },
     {
       id: "MDRSC001",
@@ -96,8 +129,8 @@ export const MENU = {
       price: "1800",
       description: "Our mixologist's masterpiece featuring a fusion of tropical flavors and premium spirits.",
       tags: ["drinks", "cocktail"],
-      image: "drink-6.png",
-      sticker: "sticker-6.png"
+      image: require("src/assets/images/recipes/drink-6.png"),
+      sticker: require("src/assets/images/recipes/sticker-6.png")
     },
     {
       id: "MDRSC002",
@@ -105,8 +138,8 @@ export const MENU = {
       price: "1700",
       description: "A delightful blend of pomegranate and passion fruit with a velvety smooth finish.",
       tags: ["drinks", "cocktail"],
-      image: "drink-7.png",
-      sticker: "sticker-7.png"
+      image: require("src/assets/images/recipes/drink-7.png"),
+      sticker: require("src/assets/images/recipes/sticker-7.png")
     },
     {
       id: "MDRSC003",
@@ -114,8 +147,8 @@ export const MENU = {
       price: "1600",
       description: "A twist on the classic Moscow Mule with ginger, lime, and elderflower liqueur.",
       tags: ["drinks", "cocktail"],
-      image: "drink-8.png",
-      sticker: "sticker-5.png"
+      image: require("src/assets/images/recipes/drink-8.png"),
+      sticker: require("src/assets/images/recipes/sticker-5.png")
     },
     {
       id: "MDRSC004",
@@ -123,8 +156,8 @@ export const MENU = {
       price: "1700",
       description: "A fragrant martini infused with lavender, gin, and a touch of citrus.",
       tags: ["drinks", "cocktail"],
-      image: "drink-9.png",
-      sticker: "sticker-9.png"
+      image: require("src/assets/images/recipes/drink-9.png"),
+      sticker: require("src/assets/images/recipes/sticker-9.png")
     },
     {
       id: "MDRSC005",
@@ -132,8 +165,8 @@ export const MENU = {
       price: "1800",
       description: "A golden-hued cocktail with turmeric, pineapple, and rum.",
       tags: ["drinks", "cocktail"],
-      image: "drink-10.png",
-      sticker: "sticker-1.png"
+      image: require("src/assets/images/recipes/drink-10.png"),
+      sticker: require("src/assets/images/recipes/sticker-1.png")
     },
     {
       id: "MDRFW001",
@@ -141,7 +174,7 @@ export const MENU = {
       price: "2500",
       description: "A curated collection of the finest red wines from around the world.",
       tags: ["drinks", "finewine"],
-      image: "drink-11.png",
+      image: require("src/assets/images/recipes/drink-11.png"),
     },
     {
       id: "MDRFW002",
@@ -149,7 +182,7 @@ export const MENU = {
       price: "2400",
       description: "A harmonious selection of crisp white wines to complement your meal.",
       tags: ["drinks", "finewine"],
-      image: "drink-12.png",
+      image: require("src/assets/images/recipes/drink-12.png"),
     },
     {
       id: "MDRFW003",
@@ -157,7 +190,7 @@ export const MENU = {
       price: "2600",
       description: "A refreshing array of rosé wines with notes of berries and florals.",
       tags: ["drinks", "finewine"],
-      image: "drink-13.png",
+      image: require("src/assets/images/recipes/drink-13.png"),
     },
     {
       id: "MDRFW004",
@@ -165,7 +198,7 @@ export const MENU = {
       price: "2700",
       description: "A selection of sparkling wines and champagnes to elevate your dining experience.",
       tags: ["drinks", "finewine"],
-      image: "drink-14.png",
+      image: require("src/assets/images/recipes/drink-14.png"),
     },
     {
       id: "MDRFW005",
@@ -173,7 +206,7 @@ export const MENU = {
       price: "2800",
       description: "A robust collection of aged Cabernet Sauvignon wines.",
       tags: ["drinks", "finewine"],
-      image: "drink-15.png",
+      image: require("src/assets/images/recipes/drink-15.png"),
     },
     {
       id: "MMCGI001",
@@ -181,7 +214,7 @@ export const MENU = {
       price: "2200",
       description: "Succulent chicken or paneer marinated in aromatic spices and slow-cooked in a traditional tandoor.",
       tags: ["mains", "global"],
-      image: "mains-1.png",
+      image: require("src/assets/images/recipes/mains-1.png"),
     },
     {
       id: "MMCGI002",
@@ -189,7 +222,7 @@ export const MENU = {
       price: "2400",
       description: "Grilled lamb with a fusion of Mediterranean herbs and flavors, served with couscous.",
       tags: ["mains", "global"],
-      image: "mains-2.png",
+      image: require("src/assets/images/recipes/mains-2.png"),
     },
     {
       id: "MMCGI003",
@@ -197,7 +230,7 @@ export const MENU = {
       price: "2500",
       description: "A tantalizing stir-fry of mixed seafood with Thai basil and chili.",
       tags: ["mains", "global"],
-      image: "mains-3.png",
+      image: require("src/assets/images/recipes/mains-3.png"),
     },
     {
       id: "MMCGI004",
@@ -205,7 +238,7 @@ export const MENU = {
       price: "2800",
       description: "Braised veal shanks in a rich saffron-infused sauce, served with gremolata.",
       tags: ["mains", "global"],
-      image: "mains-4.png",
+      image: require("src/assets/images/recipes/mains-4.png"),
     },
     {
       id: "MMCGI005",
@@ -213,7 +246,7 @@ export const MENU = {
       price: "2600",
       description: "Grilled salmon glazed with sweet teriyaki sauce, served with jasmine rice.",
       tags: ["mains", "global"],
-      image: "mains-5.png",
+      image: require("src/assets/images/recipes/mains-5.png"),
     },
     {
       id: "MMCCC001",
@@ -221,7 +254,7 @@ export const MENU = {
       price: "3200",
       description: "A perfectly grilled filet mignon, served with truffle-infused mashed potatoes and buttered asparagus.",
       tags: ["mains", "classic"],
-      image: "mains-6.png",
+      image: require("src/assets/images/recipes/mains-6.png"),
     },
     {
       id: "MMCCC002",
@@ -229,7 +262,7 @@ export const MENU = {
       price: "3500",
       description: "Grilled shrimp tail paired with a fresh lettuce salad served with square pieces of savory butter-poached chicken.",
       tags: ["mains", "classic"],
-      image: "mains-7.png",
+      image: require("src/assets/images/recipes/mains-7.png"),
     },
     {
       id: "MMCCC003",
@@ -237,7 +270,7 @@ export const MENU = {
       price: "2600",
       description: "A traditional French dish of chicken slow-cooked in red wine with mushrooms and pearl onions.",
       tags: ["mains", "classic"],
-      image: "mains-8.png",
+      image: require("src/assets/images/recipes/mains-8.png"),
     },
     {
       id: "MMCCC004",
@@ -245,7 +278,7 @@ export const MENU = {
       price: "3400",
       description: "Tender beef fillet encased in puff pastry with mushroom duxelles.",
       tags: ["mains", "classic"],
-      image: "mains-9.png",
+      image: require("src/assets/images/recipes/mains-9.png"),
     },
     {
       id: "MMCCC005",
@@ -253,7 +286,7 @@ export const MENU = {
       price: "2200",
       description: "Layers of breaded eggplant, marinara, and mozzarella, baked to perfection.",
       tags: ["mains", "classic"],
-      image: "mains-10.png",
+      image: require("src/assets/images/recipes/mains-10.png"),
     },
     {
       id: "MDESA001",
@@ -261,7 +294,7 @@ export const MENU = {
       price: "1200",
       description: "A sinful indulgence of warm chocolate fondue with fresh fruit and marshmallows for dipping.",
       tags: ["desserts", "artistry"],
-      image: "dessert-1.png",
+      image: require("src/assets/images/recipes/dessert-1.png"),
     },
     {
       id: "MDESA002",
@@ -269,7 +302,7 @@ export const MENU = {
       price: "1000",
       description: "A harmonious melody of raspberry sorbet, fresh berries, and a hint of mint.",
       tags: ["desserts", "artistry"],
-      image: "dessert-2.png",
+      image: require("src/assets/images/recipes/dessert-2.png"),
     },
     {
       id: "MDESA003",
@@ -277,7 +310,7 @@ export const MENU = {
       price: "1100",
       description: "Classic Italian tiramisu with layers of coffee-soaked ladyfingers and mascarpone.",
       tags: ["desserts", "artistry"],
-      image: "dessert-3.png",
+      image: require("src/assets/images/recipes/dessert-3.png"),
     },
     {
       id: "MDESA004",
@@ -285,7 +318,7 @@ export const MENU = {
       price: "1000",
       description: "A velvety vanilla custard with a caramelized sugar crust.",
       tags: ["desserts", "artistry"],
-      image: "dessert-4.png",
+      image: require("src/assets/images/recipes/dessert-4.png"),
     },
     {
       id: "MDESA005",
@@ -293,7 +326,7 @@ export const MENU = {
       price: "1200",
       description: "Fresh mango mousse served with a mango coulis and whipped cream.",
       tags: ["desserts", "artistry"],
-      image: "dessert-5.png",
+      image: require("src/assets/images/recipes/dessert-5.png"),
     },
     {
       id: "MDEDW001",
@@ -301,7 +334,7 @@ export const MENU = {
       price: "1500",
       description: "A curated selection of sweet dessert wines to elevate your sweet endings.",
       tags: ["desserts", "dessertwine"],
-      image: "dessert-6.png",
+      image: require("src/assets/images/recipes/dessert-6.png"),
     },
     {
       id: "MDEDW002",
@@ -309,7 +342,7 @@ export const MENU = {
       price: "1400",
       description: "A luscious dessert wine with honeyed notes and apricot.",
       tags: ["desserts", "dessertwine"],
-      image: "dessert-7.png",
+      image: require("src/assets/images/recipes/dessert-7.png"),
     },
     {
       id: "MDEDW003",
@@ -317,7 +350,7 @@ export const MENU = {
       price: "1600",
       description: "A variety of aged port wines with flavors of dried fruits and nuts.",
       tags: ["desserts", "dessertwine"],
-      image: "dessert-8.png",
+      image: require("src/assets/images/recipes/dessert-8.png"),
     },
     {
       id: "MDEDW004",
@@ -325,7 +358,7 @@ export const MENU = {
       price: "1500",
       description: "A sparkling and sweet Italian wine with floral and peachy aromas.",
       tags: ["desserts", "dessertwine"],
-      image: "dessert-9.png",
+      image: require("src/assets/images/recipes/dessert-9.png"),
     },
     {
       id: "MDEDW005",
@@ -333,7 +366,7 @@ export const MENU = {
       price: "1700",
       description: "A French sweet wine with notes of honey, apricot, and citrus.",
       tags: ["desserts", "dessertwine"],
-      image: "dessert-10.png",
+      image: require("src/assets/images/recipes/dessert-10.png"),
     }
   ]  
 };

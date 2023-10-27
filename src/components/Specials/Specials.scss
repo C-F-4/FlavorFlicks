@@ -1,0 +1,35 @@
+@import 'src/style.scss';
+
+.special-container {
+  @include flexbox($justifyContent: center);
+  @include overlay(0.45, $black);
+  @include padding(7.5rem, 2rem);
+  background: $white url('./../../assets/images/background-1.png') no-repeat center center;
+  background-size: cover;
+  color: $white;
+
+  .card {
+    @include flexbox($alignItems: center, $justifyContent: space-around);
+    @include flex($fb: 0);
+
+    .card-image {
+      max-width: 50%;
+      z-index: $zi-body-lower;
+
+      img {
+        width: inherit;
+        height: auto;
+      }
+    }
+
+    .card-body {
+      @include padding(20px);
+      @include radius($br-regular);
+      background: $white url('./../../assets/images/texture-1.png') repeat top left;
+      color: $black;
+      max-width: 50%;
+      order: 1;
+      overflow: hidden;
+    }
+  }
+}

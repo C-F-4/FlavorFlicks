@@ -1,24 +1,26 @@
 import { FC } from 'react';
-import styles from './Header.module.scss';
+import './Header.scss';
 import { NavMain } from 'src/components/NavMain/NavMain';
 import { Socials } from 'src/components/Socials/Socials';
 import { SvgIcon } from 'src/components/UiComponents/SvgIcon/SvgIcon';
-import { ReactComponent as ClockIcon } from 'src/assets/images/icons/i-clock.svg';
-import { ReactComponent as PhoneIcon } from 'src/assets/images/icons/i-phone.svg';
+import { SITE_DATA } from 'src/constants/apps.constants';
+import { ASSETS } from 'src/constants/assets.constants';
 
 export const Header: FC<{}> = () => {
   return (
-    <div className={styles.siteNavigation}>
-      <div className={styles.siteAddress}>
-        <div className={styles.siteHours}>
-          <SvgIcon svg={ClockIcon} classList={styles.icon} />
+    <div className={"header-bar"}>
+      <div className={"row address"}>
+        <div className="site-hours">
+          <SvgIcon svg={ASSETS.clockIcon} classList="icon" />
+          <span>{SITE_DATA.timings.online}</span>
         </div>
-        <div className={styles.siteContact}>
-          <SvgIcon svg={PhoneIcon} classList={styles.icon} />
+        <div className={"site-contact"}>
+          <SvgIcon svg={ASSETS.phoneIcon} classList="icon" />
+          <span>{SITE_DATA.support.phone}</span>
         </div>
-        <Socials classlist={styles.icons} />
+        <Socials classlist="icons" />
       </div>
-      <div className={styles.siteNavWrapper}>
+      <div className={"row nav-bar-wrapper"}>
         <NavMain />
       </div>
     </div>
