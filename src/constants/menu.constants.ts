@@ -166,7 +166,7 @@ export const MENU: Menu = {
       description: "A golden-hued cocktail with turmeric, pineapple, and rum.",
       tags: ["drinks", "cocktail"],
       image: require("src/assets/images/recipes/drink-10.png"),
-      sticker: require("src/assets/images/recipes/sticker-1.png")
+      sticker: require("src/assets/images/recipes/sticker-1.png"),
     },
     {
       id: "MDRFW001",
@@ -175,6 +175,7 @@ export const MENU: Menu = {
       description: "A curated collection of the finest red wines from around the world.",
       tags: ["drinks", "finewine"],
       image: require("src/assets/images/recipes/drink-11.png"),
+      sticker: require("src/assets/images/recipes/sticker-15.png"),
     },
     {
       id: "MDRFW002",
@@ -183,6 +184,7 @@ export const MENU: Menu = {
       description: "A harmonious selection of crisp white wines to complement your meal.",
       tags: ["drinks", "finewine"],
       image: require("src/assets/images/recipes/drink-12.png"),
+      sticker: require("src/assets/images/recipes/sticker-15.png"),
     },
     {
       id: "MDRFW003",
@@ -191,6 +193,7 @@ export const MENU: Menu = {
       description: "A refreshing array of rosé wines with notes of berries and florals.",
       tags: ["drinks", "finewine"],
       image: require("src/assets/images/recipes/drink-13.png"),
+      sticker: require("src/assets/images/recipes/sticker-15.png"),
     },
     {
       id: "MDRFW004",
@@ -199,6 +202,7 @@ export const MENU: Menu = {
       description: "A selection of sparkling wines and champagnes to elevate your dining experience.",
       tags: ["drinks", "finewine"],
       image: require("src/assets/images/recipes/drink-14.png"),
+      sticker: require("src/assets/images/recipes/sticker-15.png"),
     },
     {
       id: "MDRFW005",
@@ -207,6 +211,7 @@ export const MENU: Menu = {
       description: "A robust collection of aged Cabernet Sauvignon wines.",
       tags: ["drinks", "finewine"],
       image: require("src/assets/images/recipes/drink-15.png"),
+      sticker: require("src/assets/images/recipes/sticker-15.png"),
     },
     {
       id: "MMCGI001",

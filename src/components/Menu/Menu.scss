@@ -65,6 +65,7 @@
 
         .recipe-item {
           @include flexbox($justifyContent: space-between, $alignItems: baseline);
+          gap: 0.5rem;
         }
 
         .recipe-gap {

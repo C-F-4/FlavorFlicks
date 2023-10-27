@@ -50,20 +50,20 @@ export const Footer: FC<{}> = () => {
         </header>
         <form className={"column-body form-container"}>
           <div className={"form-group"}>
-            <Input placeholder={t('footer.formLabel.name')} />
+            <Input type="text" placeholder={t('footer.formLabel.name')} />
           </div>
           <div className={"form-group"}>
-            <Input placeholder={t('footer.formLabel.mail')} />
+            <Input type="email" placeholder={t('footer.formLabel.mail')} />
           </div>
           <div className={"form-group"}>
-            <Input placeholder={t('footer.formLabel.phone')} />
+            <Input type="tel" placeholder={t('footer.formLabel.phone')} />
           </div>
           <div className={"form-group"}>
             <Input type="text" placeholder={t('footer.formLabel.message')} />
           </div>
         </form>
         <div className={"column-foot"}>
-          <Button variant="secondary" size="small">{t('footer.formLabel.submit')}</Button>
+          <Button type="submit" variant="secondary" size="small">{t('footer.formLabel.submit')}</Button>
         </div>
       </div>
     </footer>
