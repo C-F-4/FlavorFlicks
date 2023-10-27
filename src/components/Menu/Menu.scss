@@ -1,7 +1,7 @@
 @import 'src/style.scss';
 
 .menu-container {
-  @include padding(3.5rem, 2rem, 7.5rem);
+  @include padding(3.5rem, 10rem, 7.5rem);
   @include overlay(0.45, $black);
   background: $white url('./../../assets/images/background-2.png') repeat-y top center;
   background-size: cover;
@@ -18,7 +18,7 @@
     gap: 40px;
 
     .card {
-      @include flexbox($alignItems: center, $justifyContent: space-around);
+      @include flexbox($alignItems: center, $justifyContent: center);
       @include flex();
 
       &:nth-of-type(even) {
@@ -40,6 +40,7 @@
         @include radius($br-regular);
         max-width: 50%;
         z-index: $zi-body-lower;
+        overflow: hidden;
 
         img {
           max-width: 100%;
@@ -51,6 +52,7 @@
         background: $white url('./../../assets/images/texture-1.png') repeat top left;
         color: $black;
         max-width: 50%;
+        z-index: $zi-body;
 
         .recipe-list {
           @include margin(10px, 0);

@@ -10,7 +10,7 @@ export const Apps: FC<{}> = () => {
 
   return (
     <section className={"apps-container"}>
-      <div className={"column"}>
+      <div className={"column column-image"}>
         <img src={AppImage} alt={t('apps.mobile')} />
       </div>
       <div className={"column"}>
@@ -19,9 +19,11 @@ export const Apps: FC<{}> = () => {
           <h1 className={"subtitle"}>{t('apps.mobile')}</h1>
         </header>
         <div className={"app-links"}>
-          <h3>{t('apps.available')}</h3>
-          <SvgIcon svg={ASSETS.gplayIcon} classList={"app-link"} />
-          <SvgIcon svg={ASSETS.aplayIcon} classList={"app-link"} />
+          <h2 className={"app-available"}>{t('apps.available')}</h2>
+          <div className={"links-wrapper"}>
+            <SvgIcon svg={ASSETS.gplayIcon} classList={"app-link"} />
+            <SvgIcon svg={ASSETS.aplayIcon} classList={"app-link"} />
+          </div>
         </div>
       </div>
     </section>

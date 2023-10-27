@@ -12,7 +12,7 @@
   .card {
     @include flexbox($alignItems: center, $justifyContent: center);
     @include flex($fb: 0);
-    @include margin(0, 8rem);
+    @include margin(0, 10rem);
 
     .card-image,
     .card-body {
