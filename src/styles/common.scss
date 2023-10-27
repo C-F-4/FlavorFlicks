@@ -99,3 +99,11 @@ p {
   font-size: $fs-lg;
   line-height: $lh-lg;
 }
+
+.form-container {
+  @include margin(1rem, 0);
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 1rem;
+}

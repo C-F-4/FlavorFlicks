@@ -2,6 +2,7 @@
 
 .footer-container {
   @include flexbox();
+  @include padding(2.5rem);
   background: $codgrey url('./../../assets/images/texture-2.png') repeat left top;
   color: $white;
 
@@ -20,6 +21,7 @@
   }
 
   .timings {
+    @extend .text-center;
   }
 
   .feedback {

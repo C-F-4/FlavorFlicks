@@ -3,15 +3,17 @@
 .apps-container {
   @include flexbox($justifyContent: center);
   @include overlay(0.45, $black);
+  @include padding(7.5rem, 2.5rem);
   background: $white url('./../../assets/images/background-3.png') no-repeat center center;
   background-size: cover;
   color: $white;
+  gap: 20px;
 
   .app-links {
     .app-link {
       font-size: $fs-10xl;
       max-width: initial;
-      height: 15rem;
+      height: 10rem;
 
       &:hover {
         cursor: pointer;

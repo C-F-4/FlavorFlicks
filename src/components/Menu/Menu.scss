@@ -15,6 +15,7 @@
   .menu-body {
     @include padding(20px);
     @include flexbox($direction: column, $justifyContent: center);
+    gap: 40px;
 
     .card {
       @include flexbox($alignItems: center, $justifyContent: space-around);
@@ -36,17 +37,17 @@
       }
 
       .card-image {
+        @include radius($br-regular);
         max-width: 50%;
         z-index: $zi-body-lower;
 
         img {
-          width: inherit;
+          max-width: 100%;
         }
       }
 
       .card-body {
         @include padding(20px, 20px, calc(20px + 25px));
-        @include radius($br-regular);
         background: $white url('./../../assets/images/texture-1.png') repeat top left;
         color: $black;
         max-width: 50%;

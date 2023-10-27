@@ -12,7 +12,7 @@
   .card {
     @include flexbox($alignItems: center, $justifyContent: center);
     @include flex($fb: 0);
-    @include margin(2rem);
+    @include margin(0, 8rem);
 
     .card-image,
     .card-body {
@@ -23,9 +23,9 @@
     .card-image {
       @include radius($br-regular);
       z-index: $zi-body-lower;
-      transform: scale(1.25);
+      transform: scale(1.2);
       overflow: hidden;
-      order: -1;
+      order: 2;
       
       img {
         width: inherit;
@@ -36,10 +36,16 @@
 
     .card-body {
       @include padding(40px);
+      @include flexbox($direction: column);
+      @include flex(1, 1, 0);
       background: $white url('./../../assets/images/texture-1.png') repeat top left;
       color: $black;
       order: 1;
       overflow: hidden;
+    }
+
+    .summary {
+      flex-grow: 1;
     }
   }
 }
