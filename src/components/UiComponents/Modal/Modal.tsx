@@ -1,6 +1,7 @@
 import { FC, ReactChild, ReactFragment, ReactPortal } from 'react';
 import './Modal.scss';
 import ImgDino from 'src/assets/images/modal-success.png';
+import ImgSecondary from 'src/assets/images/modal-secondary.png';
 import { SvgIcon } from 'src/components/UiComponents/SvgIcon/SvgIcon';
 import { ASSETS } from 'src/constants/assets.constants';
 
@@ -23,7 +24,7 @@ export const Modal: FC<ModalProps> = (props: ModalProps) => {
   return (
     <div className={`uc-modal uc-${type} uc-${state}`}>
       <div className={`uc-modal-body ${classList}`}>
-        <div className={"uc-modal-img"}><img src={ImgDino} alt={""} /></div>
+        <div className={"uc-modal-img"}><img src={type === 'success' ? ImgDino : ImgSecondary} alt={""} /></div>
         <div className={"uc-modal-content"}>{props.children}</div>
         <div className={"uc-modal-btn-primary"} onClick={props.onClose}>
           <SvgIcon svg={ASSETS.closeIcon} />
