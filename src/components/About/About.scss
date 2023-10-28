@@ -47,10 +47,17 @@
     .about1 {
       background-image: url('./../../assets/images/image-about-1.png');
       transform: rotate(-15deg);
+      transition: transform 0.35s ease-in-out;
     }
 
     .about2 {
       background-image: url('./../../assets/images/image-about-2.png');
+    }
+
+    &:hover {
+      .about1 {
+        transform: rotate(75deg);
+      }
     }
   }
 }

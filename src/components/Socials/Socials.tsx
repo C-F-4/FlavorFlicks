@@ -20,7 +20,7 @@ export const Socials: FC<{ classlist?: string }> = ({ classlist }) => {
   return (
     <div className={`icons ${classlist}`}>
       {socials.map(social => (
-        <Link to={social.url} key={social.type} className={"icon-link secondary"}>
+        <Link to={social.url} key={social.type} className={"icon-link secondary"} target='_blank'>
           <SvgIcon svg={socialIconMap[social.type]} size='2xl' />
         </Link>
       ))}

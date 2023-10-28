@@ -21,7 +21,9 @@ export const Specials: FC<{}> = () => {
                 <h3 className={"title"}>{t('specials.title')}</h3>
                 <h3 className={"subtitle"}>{recipe.title}</h3>
               </header>
-              <p className={"summary"}>{recipe.highlight}</p>
+              <p className={"summary"}>{
+                recipe.highlight.split('\n').map(line => (<>{line}<br/></>))
+              }</p>
               <div className={"card-foot"}>
                 <Button variant="secondary">{t('specials.view')}</Button>
               </div>

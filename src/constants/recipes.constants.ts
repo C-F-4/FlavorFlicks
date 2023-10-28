@@ -3,7 +3,7 @@ export const RECIPES = [
     id: "MMCCC002",
     title: "Taste of The Royals",
     highlight: "Savor the exquisite taste of our Shrimp Delight, a dish that promises a symphony of flavors and textures on your palate. \
-      An extraordinary dish that harmoniously combines the flavors of succulent grilled shrimp, a refreshing lettuce salad, and delectable square pieces of butter-poached chicken. \
+      An extraordinary dish that harmoniously combines the flavors of succulent grilled shrimp, a refreshing lettuce salad, and delectable square pieces of butter-poached chicken. \n\n\
       \
       At our fine-dine restaurant, we believe in delivering not just a meal but an unforgettable culinary journey. \
       The tender grilled shrimp, the crisp freshness of lettuce, and the savory butter-poached chicken create a symphony of flavors that will leave your taste buds enchanted. \
