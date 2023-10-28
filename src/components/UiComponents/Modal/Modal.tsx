@@ -6,7 +6,7 @@ import { ASSETS } from 'src/constants/assets.constants';
 
 export interface ModalProps {
   children?: ReactChild | ReactFragment | ReactPortal | boolean | null | undefined;
-  type?: 'success';
+  type?: 'success' | 'secondary';
   classList?: string;
   state?: ModalState;
   onClose: () => void;

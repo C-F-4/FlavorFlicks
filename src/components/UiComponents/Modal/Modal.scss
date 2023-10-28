@@ -49,4 +49,10 @@
       }
     }
   }
+
+  &.uc-secondary {
+    .uc-modal-body {
+      background: $gradient-2;
+    }
+  }
 }

@@ -7,7 +7,11 @@
     "news": "News",
     "features": "Features",
     "booking": "Reserve a Table",
-    "order": "Order Foods"
+    "order": "Order Foods",
+    "reserve": {
+      "head": "Urrrrp.",
+      "text": "This feature is currently under development. Please place a call to make a table reservation via the given number meanwhile."
+    }
   },
   "landing": {
     "title": "Culinary Excellence",
