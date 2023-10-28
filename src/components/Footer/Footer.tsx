@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import './Footer.scss';
 import { useTranslation } from 'react-i18next';
 import { Element } from 'react-scroll';
@@ -7,10 +7,11 @@ import { REGEX } from 'src/constants/patterns.constants';
 import { Socials } from 'src/components/Socials/Socials';
 import { Input } from 'src/components/UiComponents/Input/Input';
 import { Button } from 'src/components/UiComponents/Button/Button';
-import { Modal } from 'src/components/UiComponents/Modal/Modal';
+import { Modal, ModalState } from 'src/components/UiComponents/Modal/Modal';
 
 export const Footer: FC<{}> = () => {
   const { t } = useTranslation();
+  const [formModalState, setFormModalState] = useState(ModalState.Close);
 
   return (
     <footer className={"footer-container"}>
@@ -65,7 +66,7 @@ export const Footer: FC<{}> = () => {
           <div className={"form-group"}>
             <Input type="text" placeholder={t('footer.formLabel.message')} />
           </div>
-          <Modal>
+          <Modal state={formModalState} onClose={() => { setFormModalState(ModalState.Close); }}>
             <header className={"modal-content"}>
               <h3 className={"modal-head"}>{t('footer.modal.head')}</h3>
               <p className={"modal-body"}>{t('footer.modal.text')}</p>
@@ -73,7 +74,7 @@ export const Footer: FC<{}> = () => {
           </Modal>
         </form>
         <div className={"column-foot"}>
-          <Button type="submit" variant="secondary" size="small">{t('footer.formLabel.submit')}</Button>
+          <Button type="submit" variant="secondary" size="small" onClick={() => { setFormModalState(ModalState.Open); }}>{t('footer.formLabel.submit')}</Button>
         </div>
       </div>
     </footer>
