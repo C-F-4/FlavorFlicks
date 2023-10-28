@@ -53,6 +53,10 @@
       "submit": "Submit"
     },
     "copy": "Copyright",
-    "dayConnector": "To"
+    "dayConnector": "To",
+    "modal": {
+      "head": "Huzzah!",
+      "text": "Your feedback has successfully reached us. We will get back to you shortly!"
+    }
   }
 }

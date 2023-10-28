@@ -55,6 +55,8 @@
     }
 
     &:hover {
+      cursor: alias;
+
       .about1 {
         transform: rotate(75deg);
       }

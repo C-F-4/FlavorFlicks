@@ -1,6 +1,6 @@
 @import 'src/style.scss';
 
-.btn {
+.uc-btn {
   @include padding(7.5px, 12.5px);
   @include border(2.5px solid $white);
   @include radius($br-regular);

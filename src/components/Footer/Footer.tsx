@@ -2,10 +2,12 @@ import { FC } from 'react';
 import './Footer.scss';
 import { useTranslation } from 'react-i18next';
 import { Element } from 'react-scroll';
-import { Socials } from 'src/components/Socials/Socials';
 import { SITE_DATA } from 'src/constants/apps.constants';
+import { REGEX } from 'src/constants/patterns.constants';
+import { Socials } from 'src/components/Socials/Socials';
 import { Input } from 'src/components/UiComponents/Input/Input';
 import { Button } from 'src/components/UiComponents/Button/Button';
+import { Modal } from 'src/components/UiComponents/Modal/Modal';
 
 export const Footer: FC<{}> = () => {
   const { t } = useTranslation();
@@ -52,17 +54,23 @@ export const Footer: FC<{}> = () => {
         </header>
         <form className={"column-body form-container"}>
           <div className={"form-group"}>
-            <Input type="text" placeholder={t('footer.formLabel.name')} />
+            <Input type="text" placeholder={t('footer.formLabel.name')} patterncx={REGEX.name} />
           </div>
           <div className={"form-group"}>
-            <Input type="email" placeholder={t('footer.formLabel.mail')} />
+            <Input type="email" placeholder={t('footer.formLabel.mail')} patterncx={REGEX.email} />
           </div>
           <div className={"form-group"}>
-            <Input type="tel" placeholder={t('footer.formLabel.phone')} />
+            <Input type="tel" placeholder={t('footer.formLabel.phone')} patterncx={REGEX.phone_number} />
           </div>
           <div className={"form-group"}>
             <Input type="text" placeholder={t('footer.formLabel.message')} />
           </div>
+          <Modal>
+            <header className={"modal-content"}>
+              <h3 className={"modal-head"}>{t('footer.modal.head')}</h3>
+              <p className={"modal-body"}>{t('footer.modal.text')}</p>
+            </header>
+          </Modal>
         </form>
         <div className={"column-foot"}>
           <Button type="submit" variant="secondary" size="small">{t('footer.formLabel.submit')}</Button>

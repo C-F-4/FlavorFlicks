@@ -44,7 +44,7 @@ export const Button = forwardRef<HTMLButtonElement, BtnProps>(function Button(
   return (
     <button
       ref={ref}
-      className={`btn ${variant} ${size} ${props.className}`}
+      className={`uc-btn ${variant} ${size} ${props.className}`}
       disabled={props.disabled}
       aria-label={props['aria-label']}
       onClick={handleBtnclick}

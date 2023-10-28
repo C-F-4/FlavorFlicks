@@ -40,6 +40,10 @@ $dustygray: #9a9a9a;
 $mineshaft: #323232;
 $primary: #E7A331;
 
+$gradient-1: linear-gradient(318deg, rgba(51,205,189,1) 0%, rgba(140,245,234,1) 100%);
+
+$box-shadow-1: 0 14px 28px rgba($black, 0.25), 0 10px 10px rgba($black, 0.22);
+
 $br-xl: 10px;
 $br-lg: 7.5px;
 $br-regular: 5px;
@@ -50,7 +54,9 @@ $border-primary: $primary;
 $nav-primary: $primary;
 $nav-hover: $white;
 
-$zi-nav: 999;
+$zi-modal-body: 1999;
+$zi-modal: 999;
+$zi-nav: 99;
 $zi-body: 1;
 $zi-body-lower: -1;
 $zi-hidden: -999;

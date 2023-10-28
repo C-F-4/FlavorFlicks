@@ -1,7 +1,8 @@
 import { forwardRef, InputHTMLAttributes } from 'react';
 import './Input.scss';
 
-interface Props extends InputHTMLAttributes<HTMLInputElement> {
+export interface Props extends InputHTMLAttributes<HTMLInputElement> {
+  patterncx?: RegExp;
   testid?: string;
 }
 

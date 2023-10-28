@@ -48,4 +48,15 @@
       @extend .text-left;
     }
   }
+
+  .modal-content {
+    .modal-head {
+      @include margin(0, auto, 1rem);
+    }
+
+    .modal-body {
+      line-height: $lh-2xl;
+      font-family: $font-secondary;
+    }
+  }
 }

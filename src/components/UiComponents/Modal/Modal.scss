@@ -1,0 +1,52 @@
+@import 'src/style.scss';
+
+.uc-modal {
+  @include overlay();
+  display: none;
+  position: fixed;
+  z-index: $zi-hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &.uc-open {
+    display: initial;
+    z-index: $zi-modal;
+  }
+
+  .uc-modal-body {
+    @include margin(0, auto);
+    @include padding(2rem);
+    @include flexbox($direction: column, $justifyContent: center, $alignItems: center);
+    width: 40%;
+    z-index: calc($zi-modal + 1);
+    background: $gradient-1;
+    font-family: $font-primary;
+    box-shadow: $box-shadow-1;
+    color: $black;
+
+    .uc-modal-img {
+      max-width: 200px;
+      max-height: 200px;
+
+      img {
+        max-width: auto;
+        max-height: inherit;
+      }
+    }
+
+    .uc-modal-btn-primary {
+      @include radius(50%);
+      @include padding(0.5rem);
+      background-color: rgba($dustygray, 0.5);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ import { ReactComponent as SvgTwitter} from 'src/assets/images/icons/i-twitter.s
 import { ReactComponent as SvgInstagram} from 'src/assets/images/icons/i-instagram.svg';
 import { ReactComponent as SvgSwiggy} from 'src/assets/images/icons/i-swiggy.svg';
 import { ReactComponent as SvgZomato} from 'src/assets/images/icons/i-zomato.svg';
+import { ReactComponent as SvgClose} from 'src/assets/images/icons/i-close.svg';
 
 export const ASSETS = {
   clockIcon: ClockIcon,
@@ -17,5 +18,6 @@ export const ASSETS = {
   xIcon: SvgTwitter,
   igIcon: SvgInstagram,
   swiggyIcon: SvgSwiggy,
-  zomatoIcon: SvgZomato
+  zomatoIcon: SvgZomato,
+  closeIcon: SvgClose
 };
